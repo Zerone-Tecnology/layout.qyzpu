@@ -1,0 +1,97 @@
+// @import "bourbon"
+@import "vars.sass"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: 'Montserrat', sans-serif
+	overflow-x: hidden
+	margin: 0
+
+.hidden
+	display: none
+
+ul
+	list-style-type: none
+	margin: 0
+	padding: 0
+
+a
+	color: darken($accent, 20)
+
+.icon
+	background-image: url('../img/icons.svg')
+	width: 20px
+	height: 25px
+	display: inline-block
+	&.addres
+		background-position: 0 -35px
+
+.header
+	background-color: $accent 
+	color: #fff
+	padding: 15px 0
+	font-size: 14px
+	font-weight: 300
+	.block
+		display: inline-block
+		.icon
+			padding-right: 5px
+.menu
+	ul
+		li
+			display: inline-block
+			a
+				color: #fff
+				display: block
+				padding: 10px
+.top-slider
+	// background-image: url('../img/bg-header.jpg')
+	background-repeat: no-repeat
+	background-size: cover
+	min-height: 500px
+	position: relative
+	overflow: hidden
+	#background-video
+		object-fit: cover
+		width: 100%
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		z-index: -1
+
+.section
+	&.color
+		background-color: $accent
+		color: #fff
+	.title
+		font-size: 40px
+		font-weight: 800
+	&.sec-1
+		padding: 45px 0 25px
+	&.sec-2
+		.title
+			color: $gray
+			padding: 35px 0
+		.block-wrap
+			.block
+				display: inline-block
+				height: 300px
+				vertical-align: top
+				padding: 15px
+				overflow: hidden
+			.b-small
+				width: 20%
+			.b-1, .b-6
+				background-color: #B9B9B9
+			.b-large
+				width: 50%
+			.b-4
+				background-color: $accent
+				color: #fff
+				a
+					color: #fff
