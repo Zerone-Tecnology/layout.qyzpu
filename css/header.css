@@ -20,6 +20,7 @@ ul {
 
 a {
   color: #1c3435;
+  text-decoration: none;
 }
 
 .icon {
@@ -32,18 +33,139 @@ a {
   background-position: 0 -35px;
 }
 
+.btn {
+  border: 1px solid #575757;
+  padding: 5px 10px;
+  border-radius: 5em;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  padding-right: 30px;
+}
+.btn.btn-more::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/icons.svg");
+  background-position: -25px -35px;
+}
+
 .header {
   background-color: #407677;
   color: #fff;
   padding: 15px 0;
   font-size: 14px;
   font-weight: 300;
+  height: 80px;
+}
+.header::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
 }
 .header .block {
   display: inline-block;
+  vertical-align: middle;
 }
 .header .block .icon {
   padding-right: 5px;
+}
+.header .top_left li a {
+  padding: 0 5px;
+  text-decoration: none;
+}
+.header .top_left li a:hover {
+  text-decoration: underline;
+}
+.header .addres {
+  margin-left: 10px;
+  vertical-align: bottom;
+}
+.header .logo {
+  text-align: center;
+  margin-top: -25px;
+}
+.header .social_block .icon {
+  width: 30px;
+  height: 25px;
+}
+.header .social_block .icon a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.header .social_block .in {
+  background-position: 0 -75px;
+}
+.header .social_block .fb {
+  background-position: -45px -75px;
+}
+.header .social_block .vk {
+  background-position: -90px -75px;
+}
+.header .social_block .tw {
+  background-position: -135px -75px;
+}
+.header .social_block .yt {
+  background-position: -180px -75px;
+}
+.header .social_block .tg {
+  background-position: -225px -75px;
+}
+.header .lang_block {
+  position: relative;
+  margin: auto 25px;
+}
+.header .lang_block:hover ul {
+  display: block;
+}
+.header .lang_block:hover ul li {
+  border-radius: 5px;
+}
+.header .lang_block:hover ul li:hover {
+  background-color: #575757;
+}
+.header .lang_block:hover ul li:hover a {
+  color: #fff;
+}
+.header .lang_block .icon.lang {
+  width: 30px;
+  height: 25px;
+  background-position: 0 0;
+}
+.header .lang_block ul {
+  display: none;
+  position: absolute;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 5;
+}
+.header .lang_block ul li {
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+.header .lang_block ul li a {
+  text-decoration: none;
+}
+.header .lang_block ul li.active {
+  background-color: #407677;
+}
+.header .lang_block ul li.active a {
+  color: #fff;
+  padding: 10px;
+}
+.header .serach_block {
+  text-align: right;
+}
+.header .serach_block input[type=text] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
 }
 
 .menu ul li {
@@ -61,6 +183,14 @@ a {
   min-height: 500px;
   position: relative;
   overflow: hidden;
+}
+.top-slider .content {
+  width: 40%;
+  position: absolute;
+  right: 15%;
+  bottom: 15%;
+  background: #fff;
+  padding: 15px;
 }
 .top-slider #background-video {
   -o-object-fit: cover;
@@ -89,26 +219,43 @@ a {
   color: #575757;
   padding: 35px 0;
 }
+.section.sec-2 .block-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .section.sec-2 .block-wrap .block {
-  display: inline-block;
-  height: 300px;
+  height: 400px;
   vertical-align: top;
-  padding: 15px;
   overflow: hidden;
+  position: relative;
+}
+.section.sec-2 .block-wrap .block .b-content {
+  padding: 15px;
+  height: 100%;
+}
+.section.sec-2 .block-wrap .block h4 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 500;
+}
+.section.sec-2 .block-wrap .block ul {
+  vertical-align: bottom;
 }
 .section.sec-2 .block-wrap .b-small {
-  width: 20%;
+  width: 25%;
 }
-.section.sec-2 .block-wrap .b-1, .section.sec-2 .block-wrap .b-6 {
+.section.sec-2 .block-wrap .b-gray {
   background-color: #B9B9B9;
 }
 .section.sec-2 .block-wrap .b-large {
   width: 50%;
 }
-.section.sec-2 .block-wrap .b-4 {
+.section.sec-2 .block-wrap .b-color {
   background-color: #407677;
   color: #fff;
 }
-.section.sec-2 .block-wrap .b-4 a {
+.section.sec-2 .block-wrap .b-color a {
   color: #fff;
+  border-color: #fff;
 }/*# sourceMappingURL=header.css.map */

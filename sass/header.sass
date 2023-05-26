@@ -20,6 +20,7 @@ ul
 
 a
 	color: darken($accent, 20)
+	text-decoration: none
 
 .icon
 	background-image: url('../img/icons.svg')
@@ -28,17 +29,115 @@ a
 	display: inline-block
 	&.addres
 		background-position: 0 -35px
-
+.btn
+	border: 1px solid $gray
+	padding: 5px 10px
+	border-radius: 5em
+	text-decoration: none
+	font-size: 14px
+	position: relative
+	padding-right: 30px
+	&.btn-more::before
+		content: ''
+		position: absolute
+		right: 0
+		width: 35px
+		height: 35px
+		background-image: url('../img/icons.svg')
+		background-position: -25px -35px
 .header
 	background-color: $accent 
 	color: #fff
 	padding: 15px 0
 	font-size: 14px
 	font-weight: 300
+	height: 80px
+	&::before
+		content: ''
+		display: inline-block
+		vertical-align: middle
+		// height: 100%
 	.block
 		display: inline-block
+		vertical-align: middle
 		.icon
 			padding-right: 5px
+	.top_left
+		li a
+			padding: 0 5px
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+	.addres
+		margin-left: 10px
+		vertical-align: bottom
+	.logo
+		text-align: center
+		margin-top: -25px
+	.social_block
+		.icon
+			width: 30px
+			height: 25px
+			a
+				display: block
+				width: 100%
+				height: 100%
+		.in
+			background-position: 0 -75px
+		.fb
+			background-position: -45px -75px
+		.vk
+			background-position: -90px -75px
+		.tw
+			background-position: -135px -75px
+		.yt
+			background-position: -180px -75px
+		.tg
+			background-position: -225px -75px
+	.lang_block
+		position: relative
+		margin: auto 25px
+		&:hover
+			ul
+				display: block
+				li
+					border-radius: 5px
+					&:hover
+						background-color: $gray
+						a
+							color: #fff
+		.icon.lang
+			width: 30px
+			height: 25px
+			background-position: 0 0
+		ul
+			display: none
+			position: absolute
+			// top: 30px
+			background: #fff
+			padding: 5px
+			border-radius: 5px
+			z-index: 5
+			li
+				display: block
+				text-align: center
+				border-radius: 5px
+				margin: 5px 0
+				a
+					text-decoration: none
+				&.active
+					background-color: $accent
+					a
+						color: #fff
+						padding: 10px
+					
+	.serach_block
+		text-align: right
+		input[type="text"]
+			padding: 10px
+			border-radius: 5px
+			border: none
+
 .menu
 	ul
 		li
@@ -54,6 +153,13 @@ a
 	min-height: 500px
 	position: relative
 	overflow: hidden
+	.content
+		width: 40%
+		position: absolute
+		right: 15%
+		bottom: 15%
+		background: #fff
+		padding: 15px
 	#background-video
 		object-fit: cover
 		width: 100%
@@ -78,20 +184,33 @@ a
 			color: $gray
 			padding: 35px 0
 		.block-wrap
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
 			.block
-				display: inline-block
-				height: 300px
+				height: 400px
 				vertical-align: top
-				padding: 15px
 				overflow: hidden
+				position: relative
+				.b-content
+					padding: 15px
+					height: 100%
+				h4
+					margin: 0
+					font-size: 28px
+					font-weight: 500
+				ul
+					vertical-align: bottom
+
 			.b-small
-				width: 20%
-			.b-1, .b-6
+				width: 25%
+			.b-gray
 				background-color: #B9B9B9
 			.b-large
 				width: 50%
-			.b-4
+			.b-color
 				background-color: $accent
 				color: #fff
 				a
 					color: #fff
+					border-color: #fff
