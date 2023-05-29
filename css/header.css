@@ -60,6 +60,10 @@ a {
   background-position: -55px -35px;
 }
 
+.img {
+  width: 100%;
+}
+
 .header {
   background-color: #407677;
   color: #fff;
@@ -94,33 +98,6 @@ a {
 .header .logo {
   text-align: center;
   margin-top: -25px;
-}
-.header .social_block .icon {
-  width: 30px;
-  height: 25px;
-}
-.header .social_block .icon a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.header .social_block .in {
-  background-position: 0 -75px;
-}
-.header .social_block .fb {
-  background-position: -45px -75px;
-}
-.header .social_block .vk {
-  background-position: -90px -75px;
-}
-.header .social_block .tw {
-  background-position: -135px -75px;
-}
-.header .social_block .yt {
-  background-position: -180px -75px;
-}
-.header .social_block .tg {
-  background-position: -225px -75px;
 }
 .header .lang_block {
   position: relative;
@@ -176,6 +153,34 @@ a {
   border: none;
 }
 
+.social_block .icon {
+  width: 30px;
+  height: 25px;
+}
+.social_block .icon a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.social_block .in {
+  background-position: 0 -75px;
+}
+.social_block .fb {
+  background-position: -45px -75px;
+}
+.social_block .vk {
+  background-position: -90px -75px;
+}
+.social_block .tw {
+  background-position: -135px -75px;
+}
+.social_block .yt {
+  background-position: -180px -75px;
+}
+.social_block .tg {
+  background-position: -225px -75px;
+}
+
 .menu ul li {
   display: inline-block;
 }
@@ -210,144 +215,4 @@ a {
   top: 0;
   bottom: 0;
   z-index: -1;
-}
-
-.section.color {
-  background-color: #407677;
-  color: #fff;
-}
-.section.color .title {
-  color: #fff;
-}
-.section .title {
-  font-size: 40px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #575757;
-}
-.section.lcolor {
-  background-color: #E6ECEE;
-}
-.section.sec-1 {
-  padding: 45px 0 25px;
-}
-.section.sec-2 .title {
-  color: #575757;
-  padding: 35px 0;
-}
-.section.sec-2 .block-wrap {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.section.sec-2 .block-wrap .block {
-  height: 400px;
-  vertical-align: top;
-  overflow: hidden;
-  position: relative;
-}
-.section.sec-2 .block-wrap .block .b-content {
-  padding: 15px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.section.sec-2 .block-wrap .block h4 {
-  margin: 0;
-  font-size: 28px;
-  font-weight: 500;
-}
-.section.sec-2 .block-wrap .block ul {
-  margin-top: auto;
-  padding-bottom: 25px;
-}
-.section.sec-2 .block-wrap .block ul li {
-  padding: 5px 0;
-}
-.section.sec-2 .block-wrap .block .btn {
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
-  height: 25px;
-}
-.section.sec-2 .block-wrap .b-small {
-  width: 25%;
-}
-.section.sec-2 .block-wrap .b-gray {
-  background-color: #B9B9B9;
-}
-.section.sec-2 .block-wrap .b-large {
-  width: 50%;
-}
-.section.sec-2 .block-wrap .b-color {
-  background-color: #407677;
-  color: #fff;
-}
-.section.sec-2 .block-wrap .b-color a {
-  color: #fff;
-  border-color: #fff;
-}
-.section.sec-3 {
-  padding: 55px 0;
-  margin-top: 55px;
-}
-.section.sec-3 ul li {
-  padding: 25px 0;
-  font-size: 20px;
-  position: relative;
-}
-.section.sec-3 ul li:first-child {
-  border-bottom: 1px solid #D5D5D4;
-}
-.section.sec-3 .btn {
-  position: absolute;
-  right: 0;
-  height: 25px;
-}
-.section.sec-4 .btn {
-  border-color: #407677;
-  color: #407677;
-}
-.section.sec-4 .block .date {
-  color: #bcbcdb;
-  font-size: 14px;
-}
-.section.sec-4 .news-block-main .img {
-  width: 100%;
-}
-.section.sec-4 .news-block-main .news-title {
-  font-size: 24px;
-  color: #407677;
-}
-.section.sec-4 .news-block-main .desc {
-  color: #bcbcdb;
-  font-size: 14px;
-  margin-bottom: 15px;
-}
-.section.sec-4 .news-block-main .date {
-  text-transform: uppercase;
-  margin-bottom: 55px;
-}
-.section.sec-4 .news-block-main .blocks {
-  display: flex;
-}
-.section.sec-4 .news-block-main .blocks .block-left {
-  width: 80%;
-}
-.section.sec-4 .news-block-main .blocks .block-right {
-  width: 20%;
-  text-align: right;
-}
-.section.sec-4 .news-block .block {
-  display: flex;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #D5D5D4;
-  padding: 15px 0;
-}
-.section.sec-4 .news-block .news-title {
-  display: block;
-  margin-bottom: 15px;
-}
-.section.sec-4 .news-block .img {
-  padding-left: 15px;
 }/*# sourceMappingURL=header.css.map */

@@ -3,6 +3,8 @@
 
 //Load Libs SASS
 @import "../libs/css/bootstrap-grid.min.css"
+@import "../libs/owlcarousel/owl.carousel.min.css"
+@import "../libs/owlcarousel/owl.theme.default.min.css"
 
 *::-webkit-input-placeholder
 	color: #666
@@ -27,7 +29,247 @@ body input:required:valid,
 body textarea:required:valid
 	color: #666
 
-//Custom Styles Here
+.section
+	&.color
+		background-color: $accent
+		color: #fff
+		.title
+			color: #fff
+	.title
+		font-size: 40px
+		font-weight: 800
+		text-transform: uppercase
+		color: $gray
+		&.title-h
+			border-bottom: 1px solid $lgray
+			margin-bottom: 40px
+	&.lcolor
+		background-color: #E6ECEE
+	&.sec-1
+		padding: 45px 0 25px
+	&.sec-2
+		.title
+			color: $gray
+			padding: 35px 0
+		.block-wrap
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			border-radius: 15px
+			overflow: hidden
+			.block
+				height: 400px
+				vertical-align: top
+				overflow: hidden
+				position: relative
+				.b-content
+					padding: 15px
+					height: 100%
+					display: flex
+					flex-direction: column
+				h4
+					margin: 0
+					font-size: 28px
+					font-weight: 500
+				ul
+					margin-top: auto
+					padding-bottom: 25px
+					li
+						padding: 5px 0
+				.btn
+					position: absolute
+					right: 15px
+					bottom: 15px
+					height: 25px
+
+			.b-small
+				width: 25%
+			.b-gray
+				background-color: #B9B9B9
+			.b-large
+				width: 50%
+			.b-color
+				background-color: $accent
+				color: #fff
+				a
+					color: #fff
+					border-color: #fff
+	&.sec-3
+		padding: 55px 0
+		margin-top: 55px
+		ul
+			li
+				padding: 25px 0
+				font-size: 20px
+				position: relative
+				&:first-child
+					border-bottom: 1px solid $lgray
+		.btn
+			position: absolute
+			right: 0
+			height: 25px
+	&.sec-4
+		.btn
+			border-color: $accent
+			color: $accent
+		.block
+			.date
+				color: #bcbcdb
+				font-size: 14px
+		.news-block-main
+			.img
+				width: 100%
+			.news-title
+				font-size: 24px
+				color: $accent
+			.desc
+				color: #bcbcdb
+				font-size: 14px
+				margin-bottom: 15px
+			.date
+				text-transform: uppercase
+				margin-bottom: 55px
+			.blocks
+				display: flex
+				.block-left
+					width: 80%
+				.block-right
+					width: 20%
+					text-align: right
+
+		.news-block
+			.block
+				display: flex
+				margin-bottom: 15px
+				border-bottom: 1px solid $lgray
+				padding: 15px 0
+			.news-title
+				display: block
+				margin-bottom: 15px
+			.img
+				padding-left: 15px
+				width: 150px
+	&.sec-5
+		.title
+			border-bottom: 1px solid $lgray
+			margin-bottom: 55px
+		.blocks
+			ul
+				display: flex
+				flex-wrap: wrap
+			li
+				padding: 25px 0
+				width: 32%
+				flex-grow: 1
+				border-bottom: 1px solid $lgray
+				margin-left: 1%
+				position: relative
+				.date
+					color: $lgray
+					margin-top: 15px
+				a:hover
+					color: $accent
+					text-decoration: underline
+					&::after
+						content: ''
+						position: absolute
+						right: 15px
+						bottom: 15px
+						width: 30px
+						height: 30px
+						background-color: $accent
+						border-radius: 50px
+						background-image: url('../img/icons.svg')
+						background-position: -53px -33px
+				&.last
+					a:hover::after
+						content: none
+					
+				&:nth-child(1),
+				&:nth-child(2),
+				&:nth-child(3)
+					border-top: 1px solid $lgray
+	&.sec-6
+		.block
+			.content
+				width: 65%
+				display: inline-block
+				padding: 15px
+				color: $gray
+				h4
+					font-size: 28px
+				p
+					font-style: italic
+				.quote
+					font-size: 14px
+					text-align: right
+			.img
+				width: 30%
+				display: inline-block
+	&.sec-7
+		.blocks
+			display: flex
+			flex-direction: column
+			.block
+				.img
+					width: 100px
+					padding-right: 15px
+				.content
+					width: 75%
+					display: inline-block
+					color: $gray
+					h4
+						margin-bottom: 0
+					p
+						margin-top: 0
+	&.sec-8
+		position: relative
+		min-height: 550px
+		.title
+				position: absolute
+				display: block
+				top: 30%
+				left: 0
+				right: 0
+				margin: auto
+				width: 250px
+				p
+					margin: 0
+		.block
+			position: absolute
+			.img
+				width: 150px
+			&.b-1
+				left: 10%
+				top: 50%
+			&.b-2
+				left: 30%
+				top: 5%
+			&.b-3
+				left: 70%
+				top: 80%
+			&.b-4
+				left: 40%
+				top: 70%
+			&.b-5
+				left: 80%
+				top: 30%
+
+.footer
+	background-color: $accent
+	color: #fff
+	.title
+		color: #fff
+	.b-center
+		text-align: center
+		.img
+			width: 80%
+	.b-right
+		text-align: right
+		.img
+			width: 120px
+	.copy
+		text-align: center
 
 //ALWAYS END
 @import "media"
