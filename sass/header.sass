@@ -41,10 +41,16 @@ a
 		content: ''
 		position: absolute
 		right: 0
-		width: 35px
-		height: 35px
+		width: 20px
+		height: 20px
 		background-image: url('../img/icons.svg')
-		background-position: -25px -35px
+		background-position: -40px -35px
+	&.color
+		background-color: $accent
+		color: #fff!important
+		&::before
+			width: 25px
+			background-position: -55px -35px
 .header
 	background-color: $accent 
 	color: #fff
@@ -181,6 +187,8 @@ a
 		font-weight: 800
 		text-transform: uppercase
 		color: $gray
+	&.lcolor
+		background-color: #E6ECEE
 	&.sec-1
 		padding: 45px 0 25px
 	&.sec-2
@@ -199,12 +207,22 @@ a
 				.b-content
 					padding: 15px
 					height: 100%
+					display: flex
+					flex-direction: column
 				h4
 					margin: 0
 					font-size: 28px
 					font-weight: 500
 				ul
-					vertical-align: bottom
+					margin-top: auto
+					padding-bottom: 25px
+					li
+						padding: 5px 0
+				.btn
+					position: absolute
+					right: 15px
+					bottom: 15px
+					height: 25px
 
 			.b-small
 				width: 25%
@@ -219,12 +237,59 @@ a
 					color: #fff
 					border-color: #fff
 	&.sec-3
-		background-color: #E6ECEE
 		padding: 55px 0
 		margin-top: 55px
 		ul
 			li
 				padding: 25px 0
 				font-size: 20px
+				position: relative
 				&:first-child
-					border-bottom: 1px solid #D5D5D4
+					border-bottom: 1px solid $lgray
+		.btn
+			position: absolute
+			right: 0
+			height: 25px
+	&.sec-4
+		.btn
+			border-color: $accent
+			color: $accent
+		.block
+			.date
+				color: #bcbcdb
+				font-size: 14px
+		.news-block-main
+			.img
+				width: 100%
+			.news-title
+				font-size: 24px
+				color: $accent
+			.desc
+				color: #bcbcdb
+				font-size: 14px
+				margin-bottom: 15px
+			.date
+				text-transform: uppercase
+				margin-bottom: 55px
+			.blocks
+				display: flex
+				.block-left
+					width: 80%
+				.block-right
+					width: 20%
+					text-align: right
+
+		.news-block
+			.block
+				display: flex
+				margin-bottom: 15px
+				border-bottom: 1px solid $lgray
+				padding: 15px 0
+			.news-title
+				display: block
+				margin-bottom: 15px
+			.img
+				padding-left: 15px
+			
+
+
