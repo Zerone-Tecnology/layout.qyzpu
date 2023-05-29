@@ -29,6 +29,9 @@ body input:required:valid,
 body textarea:required:valid
 	color: #666
 
+.none
+	display: none
+
 .section
 	&.color
 		background-color: $accent
@@ -37,7 +40,7 @@ body textarea:required:valid
 			color: #fff
 	.title
 		font-size: 40px
-		font-weight: 800
+		font-weight: 500
 		text-transform: uppercase
 		color: $gray
 		&.title-h
@@ -150,6 +153,7 @@ body textarea:required:valid
 				padding-left: 15px
 				width: 150px
 	&.sec-5
+		margin-bottom: 55px
 		.title
 			border-bottom: 1px solid $lgray
 			margin-bottom: 55px
@@ -159,10 +163,10 @@ body textarea:required:valid
 				flex-wrap: wrap
 			li
 				padding: 25px 0
-				width: 32%
+				width: 25%
 				flex-grow: 1
 				border-bottom: 1px solid $lgray
-				margin-left: 1%
+				margin-right: 5%
 				position: relative
 				.date
 					color: $lgray
@@ -190,6 +194,7 @@ body textarea:required:valid
 				&:nth-child(3)
 					border-top: 1px solid $lgray
 	&.sec-6
+		padding-top: 25px
 		.block
 			.content
 				width: 65%
@@ -207,10 +212,17 @@ body textarea:required:valid
 				width: 30%
 				display: inline-block
 	&.sec-7
+		padding: 25px 0 55px
 		.blocks
 			display: flex
 			flex-direction: column
+			border-left: 1px solid $lgray
+			border-right: 1px solid $lgray
 			.block
+				padding: 15px
+				border-bottom: 1px solid $lgray
+				&:first-child
+					border-top: 1px solid $lgray
 				.img
 					width: 100px
 					padding-right: 15px
@@ -218,10 +230,13 @@ body textarea:required:valid
 					width: 75%
 					display: inline-block
 					color: $gray
+					vertical-align: top
 					h4
-						margin-bottom: 0
+						margin: 0
 					p
 						margin-top: 0
+			.btn
+				height: 25px
 	&.sec-8
 		position: relative
 		min-height: 550px

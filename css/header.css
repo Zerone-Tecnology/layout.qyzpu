@@ -54,10 +54,20 @@ a {
 .btn.color {
   background-color: #407677;
   color: #fff !important;
+  border-color: #407677;
 }
 .btn.color::before {
   width: 25px;
   background-position: -55px -35px;
+}
+.btn.btn-none {
+  padding-right: 5px;
+  width: 30px;
+  display: block;
+}
+.btn.btn-none::before {
+  left: 0;
+  margin: 0 auto;
 }
 
 .img {
@@ -193,7 +203,7 @@ a {
 .top-slider {
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 500px;
+  min-height: 600px;
   position: relative;
   overflow: hidden;
 }

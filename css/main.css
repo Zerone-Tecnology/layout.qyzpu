@@ -31,6 +31,10 @@ body textarea:required:valid {
   color: #666;
 }
 
+.none {
+  display: none;
+}
+
 .section.color {
   background-color: #407677;
   color: #fff;
@@ -40,7 +44,7 @@ body textarea:required:valid {
 }
 .section .title {
   font-size: 40px;
-  font-weight: 800;
+  font-weight: 500;
   text-transform: uppercase;
   color: #575757;
 }
@@ -177,6 +181,9 @@ body textarea:required:valid {
   padding-left: 15px;
   width: 150px;
 }
+.section.sec-5 {
+  margin-bottom: 55px;
+}
 .section.sec-5 .title {
   border-bottom: 1px solid #D5D5D4;
   margin-bottom: 55px;
@@ -187,10 +194,10 @@ body textarea:required:valid {
 }
 .section.sec-5 .blocks li {
   padding: 25px 0;
-  width: 32%;
+  width: 25%;
   flex-grow: 1;
   border-bottom: 1px solid #D5D5D4;
-  margin-left: 1%;
+  margin-right: 5%;
   position: relative;
 }
 .section.sec-5 .blocks li .date {
@@ -219,6 +226,9 @@ body textarea:required:valid {
 .section.sec-5 .blocks li:nth-child(1), .section.sec-5 .blocks li:nth-child(2), .section.sec-5 .blocks li:nth-child(3) {
   border-top: 1px solid #D5D5D4;
 }
+.section.sec-6 {
+  padding-top: 25px;
+}
 .section.sec-6 .block .content {
   width: 65%;
   display: inline-block;
@@ -239,9 +249,21 @@ body textarea:required:valid {
   width: 30%;
   display: inline-block;
 }
+.section.sec-7 {
+  padding: 25px 0 55px;
+}
 .section.sec-7 .blocks {
   display: flex;
   flex-direction: column;
+  border-left: 1px solid #D5D5D4;
+  border-right: 1px solid #D5D5D4;
+}
+.section.sec-7 .blocks .block {
+  padding: 15px;
+  border-bottom: 1px solid #D5D5D4;
+}
+.section.sec-7 .blocks .block:first-child {
+  border-top: 1px solid #D5D5D4;
 }
 .section.sec-7 .blocks .block .img {
   width: 100px;
@@ -251,12 +273,16 @@ body textarea:required:valid {
   width: 75%;
   display: inline-block;
   color: #575757;
+  vertical-align: top;
 }
 .section.sec-7 .blocks .block .content h4 {
-  margin-bottom: 0;
+  margin: 0;
 }
 .section.sec-7 .blocks .block .content p {
   margin-top: 0;
+}
+.section.sec-7 .blocks .btn {
+  height: 25px;
 }
 .section.sec-8 {
   position: relative;
