@@ -68,6 +68,8 @@ body textarea:required:valid {
   flex-wrap: wrap;
   border-radius: 15px;
   overflow: hidden;
+  border-top: 1px solid #D5D5D4;
+  border-bottom: 1px solid #D5D5D4;
 }
 .section.sec-2 .block-wrap .block {
   height: 400px;
@@ -116,6 +118,9 @@ body textarea:required:valid {
   color: #fff;
   border-color: #fff;
 }
+.section.sec-2 .block-wrap .b-color a::before {
+  background-position: -60px -35px;
+}
 .section.sec-3 {
   padding: 55px 0;
   margin-top: 55px;
@@ -131,6 +136,7 @@ body textarea:required:valid {
 .section.sec-3 .btn {
   position: absolute;
   right: 0;
+  bottom: 15px;
   height: 25px;
 }
 .section.sec-4 .btn {
@@ -181,6 +187,9 @@ body textarea:required:valid {
   padding-left: 15px;
   width: 150px;
 }
+.section.sec-4 .news-block .btn::before {
+  background-position: -80px -35px;
+}
 .section.sec-5 {
   margin-bottom: 55px;
 }
@@ -230,6 +239,7 @@ body textarea:required:valid {
   padding-top: 25px;
 }
 .section.sec-6 .block .content {
+  vertical-align: top;
   width: 65%;
   display: inline-block;
   padding: 15px;
@@ -252,6 +262,9 @@ body textarea:required:valid {
 .section.sec-7 {
   padding: 25px 0 55px;
 }
+.section.sec-7 .title-h {
+  margin-bottom: 0;
+}
 .section.sec-7 .blocks {
   display: flex;
   flex-direction: column;
@@ -261,9 +274,7 @@ body textarea:required:valid {
 .section.sec-7 .blocks .block {
   padding: 15px;
   border-bottom: 1px solid #D5D5D4;
-}
-.section.sec-7 .blocks .block:first-child {
-  border-top: 1px solid #D5D5D4;
+  position: relative;
 }
 .section.sec-7 .blocks .block .img {
   width: 100px;
@@ -283,6 +294,9 @@ body textarea:required:valid {
 }
 .section.sec-7 .blocks .btn {
   height: 25px;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
 }
 .section.sec-8 {
   position: relative;
@@ -330,6 +344,7 @@ body textarea:required:valid {
 .footer {
   background-color: #407677;
   color: #fff;
+  padding-top: 30px;
 }
 .footer .title {
   color: #fff;

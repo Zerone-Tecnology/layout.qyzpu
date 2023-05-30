@@ -60,6 +60,8 @@ body textarea:required:valid
 			flex-wrap: wrap
 			border-radius: 15px
 			overflow: hidden
+			border-top: 1px solid $lgray
+			border-bottom: 1px solid $lgray
 			.block
 				height: 400px
 				vertical-align: top
@@ -97,6 +99,8 @@ body textarea:required:valid
 				a
 					color: #fff
 					border-color: #fff
+					&::before
+						background-position: -60px -35px
 	&.sec-3
 		padding: 55px 0
 		margin-top: 55px
@@ -110,8 +114,9 @@ body textarea:required:valid
 		.btn
 			position: absolute
 			right: 0
+			bottom: 15px
 			height: 25px
-	&.sec-4
+	&.sec-4 // news
 		.btn
 			border-color: $accent
 			color: $accent
@@ -152,6 +157,8 @@ body textarea:required:valid
 			.img
 				padding-left: 15px
 				width: 150px
+			.btn::before
+				background-position: -80px -35px
 	&.sec-5
 		margin-bottom: 55px
 		.title
@@ -197,6 +204,7 @@ body textarea:required:valid
 		padding-top: 25px
 		.block
 			.content
+				vertical-align: top
 				width: 65%
 				display: inline-block
 				padding: 15px
@@ -213,6 +221,8 @@ body textarea:required:valid
 				display: inline-block
 	&.sec-7
 		padding: 25px 0 55px
+		.title-h
+			margin-bottom: 0
 		.blocks
 			display: flex
 			flex-direction: column
@@ -221,8 +231,7 @@ body textarea:required:valid
 			.block
 				padding: 15px
 				border-bottom: 1px solid $lgray
-				&:first-child
-					border-top: 1px solid $lgray
+				position: relative
 				.img
 					width: 100px
 					padding-right: 15px
@@ -237,6 +246,9 @@ body textarea:required:valid
 						margin-top: 0
 			.btn
 				height: 25px
+				position: absolute
+				right: 15px
+				bottom: 15px
 	&.sec-8
 		position: relative
 		min-height: 550px
@@ -273,6 +285,7 @@ body textarea:required:valid
 .footer
 	background-color: $accent
 	color: #fff
+	padding-top: 30px
 	.title
 		color: #fff
 	.b-center
