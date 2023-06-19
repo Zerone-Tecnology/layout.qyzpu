@@ -43,4 +43,8 @@ $(function() {
 		return false;
 	});
 
+	$('.mmenu').click(function(){
+		$('#mmenu').toggleClass('active');
+	})
+
 });

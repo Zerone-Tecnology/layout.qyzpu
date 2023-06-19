@@ -84,6 +84,7 @@ a:hover {
   font-size: 14px;
   font-weight: 300;
   height: 80px;
+  position: relative;
 }
 .header::before {
   content: "";
@@ -165,6 +166,19 @@ a:hover {
   border-radius: 5px;
   border: none;
 }
+.header .mainMenu {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  padding: 25px;
+  background-color: #000;
+  height: 60px;
+}
+.header .mainMenu a {
+  color: #fff;
+  font-weight: 800;
+}
 
 .social_block .icon {
   width: 30px;
@@ -206,17 +220,33 @@ a:hover {
 .top-slider {
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 600px;
+  min-height: 60vh;
   position: relative;
   overflow: hidden;
+}
+.top-slider::after {
+  content: "";
+  position: absolute;
+  height: 300px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  bottom: 0;
+  left: 0;
 }
 .top-slider .content {
   width: 40%;
   position: absolute;
-  right: 15%;
-  bottom: 15%;
-  background: #fff;
-  padding: 15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 25%;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 4px #000;
+}
+.top-slider .content b {
+  font-size: 44px;
 }
 .top-slider #background-video {
   -o-object-fit: cover;
@@ -228,4 +258,48 @@ a:hover {
   top: 0;
   bottom: 0;
   z-index: -1;
+}
+
+#mmenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: #000;
+}
+#mmenu.active {
+  display: block;
+}
+#mmenu a {
+  color: #fff;
+}
+#mmenu ul {
+  padding: 20px 0 0 20px;
+  position: relative;
+  width: 25%;
+}
+#mmenu ul li {
+  display: block;
+  font-size: 24px;
+  padding: 25px 15px;
+}
+#mmenu ul li:hover {
+  background-color: #222;
+}
+#mmenu ul li:hover > ul {
+  display: block;
+}
+#mmenu ul li ul {
+  display: none;
+  top: 0;
+  position: absolute;
+  left: 100%;
+  height: 100vh;
+  width: 80%;
+}
+#mmenu ul li ul li {
+  font-size: 16px;
+  padding: 10px 15px;
 }/*# sourceMappingURL=header.css.map */
