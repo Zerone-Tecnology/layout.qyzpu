@@ -43,7 +43,7 @@ $(function() {
 		return false;
 	});
 
-	$('.mmenu').click(function(){
+	$('#menuToggle').click(function(){
 		$('#mmenu').toggleClass('active');
 	})
 
