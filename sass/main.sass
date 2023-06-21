@@ -41,7 +41,7 @@ body textarea:required:valid
 			color: #fff
 	.title
 		font-size: 40px
-		font-weight: 500
+		font-weight: 600
 		text-transform: uppercase
 		color: $gray
 		&.title-h
@@ -68,6 +68,7 @@ body textarea:required:valid
 				vertical-align: top
 				overflow: hidden
 				position: relative
+				width: 25%
 				.b-content
 					padding: 15px
 					height: 100%
@@ -87,21 +88,24 @@ body textarea:required:valid
 					right: 15px
 					bottom: 15px
 					height: 25px
-
-			.b-small
-				width: 25%
-			.b-gray
-				background-color: #B9B9B9
-			.b-large
-				width: 50%
-			.b-color
-				background-color: $accent
-				color: #fff
-				a
+				.img
+					position: absolute
+					top: 0
+					left: 0
+					z-index: -1
+				&:nth-child(1), &:nth-child(6)
+					background-color: #B9B9B9
+				&:nth-child(3), &:nth-child(4)
+					width: 50%
+				&:nth-child(4)
+					background-color: $accent
 					color: #fff
-					border-color: #fff
-					&::before
-						background-position: -60px -35px
+					a
+						color: #fff
+						border-color: #fff
+						&::before
+							background-position: -60px -35px
+			
 	&.sec-3
 		padding: 55px 0
 		margin-top: 55px
@@ -152,12 +156,16 @@ body textarea:required:valid
 				margin-bottom: 15px
 				border-bottom: 1px solid $lgray
 				padding: 15px 0
+			.content
+				width: 70%
 			.news-title
 				display: block
 				margin-bottom: 15px
-			.img
-				padding-left: 15px
-				width: 150px
+			.img-wrap
+				overflow: hidden
+				.img
+					width: auto
+					height: 100px
 			.btn::before
 				background-position: -80px -35px
 	&.sec-5

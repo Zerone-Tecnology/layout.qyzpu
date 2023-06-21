@@ -1,9 +1,16 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/GilroyRegular/GilroyRegular.woff2") format("woff2"), url("../fonts/GilroyRegular/GilroyRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   font-size: 16px;
   min-width: 320px;
   position: relative;
   line-height: 1.6;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Gilroy", "Montserrat", sans-serif;
   overflow-x: hidden;
   margin: 0;
 }
