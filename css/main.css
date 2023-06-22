@@ -1471,9 +1471,13 @@ body textarea:required:valid {
   font-size: 14px;
   text-align: right;
 }
-.section.sec-6 .block .img {
+.section.sec-6 .block .img-wrap {
   width: 30%;
   display: inline-block;
+}
+.section.sec-6 .block .img-wrap .img {
+  height: 100%;
+  width: auto;
 }
 .section.sec-7 {
   padding: 25px 0 55px;
