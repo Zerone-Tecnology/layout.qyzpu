@@ -7,21 +7,21 @@
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonts/GilroyRegular/GilroyBold.woff2") format("woff2"), url("../fonts/GilroyRegular/GilroyBold.woff") format("woff");
+  src: url("../fonts/GilroyBold/GilroyBold.woff2") format("woff2"), url("../fonts/GilroyBold/GilroyBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold/Gilroy-SemiBold.woff") format("woff");
+  src: url("../fonts/Gilroy-SemiBold/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold/Gilroy-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Gilroy-RegularItalic";
-  src: url("Gilroy-RegularItalic.woff2") format("woff2"), url("../fonts/Gilroy-RegularItalic/Gilroy-RegularItalic.woff") format("woff");
+  src: url("../fonts/Gilroy-RegularItalic/Gilroy-RegularItalic.woff2") format("woff2"), url("../fonts/Gilroy-RegularItalic/Gilroy-RegularItalic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -47,7 +47,7 @@ ul {
 }
 
 a {
-  color: #1c3435;
+  color: #0f2c2c;
   text-decoration: none;
 }
 a:hover {
@@ -66,8 +66,10 @@ a:hover {
 
 .btn {
   border: 1px solid #575757;
-  padding: 5px 10px;
-  border-radius: 5em;
+  padding: 10px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
   text-decoration: none;
   font-size: 14px;
   position: relative;
@@ -77,15 +79,16 @@ a:hover {
   content: "";
   position: absolute;
   right: 0;
+  top: 0;
   width: 20px;
   height: 20px;
   background-image: url("../img/icons.svg");
   background-position: -40px -35px;
 }
 .btn.color {
-  background-color: #407677;
+  background-color: #287878;
   color: #fff !important;
-  border-color: #407677;
+  border-color: #287878;
 }
 .btn.color::before {
   width: 25px;
@@ -106,7 +109,7 @@ a:hover {
 }
 
 .header {
-  background-color: #407677;
+  background-color: #287878;
   color: #fff;
   padding: 15px 0;
   font-size: 14px;
@@ -180,7 +183,7 @@ a:hover {
   text-decoration: none;
 }
 .header .lang_block ul li.active {
-  background-color: #407677;
+  background-color: #287878;
 }
 .header .lang_block ul li.active a {
   color: #fff;
@@ -276,18 +279,56 @@ a:hover {
 .top-slider .content b {
   font-size: 44px;
 }
-.top-slider #background-video {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
+
+* {
+  box-sizing: border-box;
 }
 
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -99;
+}
+
+.video-foreground, .video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground {
+    height: 300%;
+    top: -100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground {
+    width: 300%;
+    left: -100%;
+  }
+}
+@media all and (max-width: 600px) {
+  .vid-info {
+    width: 50%;
+    padding: 0.5rem;
+  }
+  .vid-info h1 {
+    margin-bottom: 0.2rem;
+  }
+}
+@media all and (max-width: 500px) {
+  .vid-info .acronym {
+    display: none;
+  }
+}
 #mmenu {
   display: none;
   position: fixed;

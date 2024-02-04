@@ -15,7 +15,8 @@ $(function() {
 	new WOW().init();
 
 	$('.slider').owlCarousel({
-		items: 1
+		items: 1,
+		nav: true
 	});
 
 	//SVG Fallback
