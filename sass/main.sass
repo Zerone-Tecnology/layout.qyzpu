@@ -173,7 +173,7 @@ body textarea:required:valid
 							background-color: #fff
 							&::after, &::before
 								background-color: #fff
-	// why qyzpu		
+	// why qyzpu
 	&.sec-3
 		padding: 45px 0
 		.sec-desc
@@ -215,6 +215,9 @@ body textarea:required:valid
 					background-color: #fff
 					&::after, &::before
 						background-color: #fff
+		.blocks
+			display: flex
+			gap: 25px
 		.left-side
 			width: 60%
 			.img
@@ -246,6 +249,8 @@ body textarea:required:valid
 				background-color: #EFEFEF
 				max-height: 220px
 				gap: 15px
+				&:first-child
+					display: none
 			.img-wrap
 				overflow: hidden
 				width: 60%
@@ -412,44 +417,6 @@ body textarea:required:valid
 			position: absolute
 			.img
 				width: 250px
-				position: absolute
-				// width: 100%
-				// height: 100%
-				object-fit: cover
-			&:nth-child(1)
-				left: 0
-				top: 30%
-			&:nth-child(2)
-				left: 0
-				top: 20%
-				.img
-					width: 300px
-			&:nth-child(3)
-				left: 16%
-				top: 0
-			&:nth-child(4)
-				left: 45%
-				top: 0
-			&:nth-child(5)
-				left: 70%
-				top: 8%
-				.img
-					width: 300px
-			&:nth-child(6)
-				left: 70%
-				top: 50%
-				
-			&:nth-child(7)
-				left: 80%
-				top: 46%
-			&:nth-child(8)
-				left: 50%
-				top: 70%
-			&:nth-child(9)
-				left: 23%
-				top: 55%
-				.img
-					width: 300px
 
 .footer
 	background-color: $accent

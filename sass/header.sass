@@ -68,12 +68,14 @@ a
 	width: 100%
 
 .header
-	background-color: $accent 
+	// background-color: $accent
+	background: rgb(0,0,0)
+	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)
 	color: #fff
 	padding: 15px 0
 	font-size: 14px
 	font-weight: 300
-	height: 80px
+	height: 200px
 	position: relative
 	&::before
 		content: ''
@@ -140,17 +142,7 @@ a
 			padding: 10px
 			border-radius: 5px
 			border: none
-	.mainMenu
-		position: fixed
-		z-index: 999
-		top: 0
-		right: 0
-		padding: 25px
-		background-color: #000
-		height: 60px
-		a
-			color: #fff
-			font-weight: 800
+
 .social_block
 	.icon
 		width: 30px
@@ -211,7 +203,8 @@ a
 	box-sizing: border-box
 
 .video-background
-	background: #000
+	background-image: url('https://i9.ytimg.com/vi_webp/o34jaoD8r_E/mq2.webp?sqp=CLSavK8G-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGFsgYShlMA8=&rs=AOn4CLB_vrS4WolcI9XSKcnEVLAMcNAAeA')
+	background-size: contain
 	position: fixed
 	top: 0
 	right: 0
@@ -249,6 +242,14 @@ a
 	.vid-info .acronym
 		display: none
 
+.mainMenu
+	background-color: $accent
+	width: 50px
+	height: 50px
+	border-radius: 50%
+	a
+		color: #fff
+		font-weight: 800
 	
 #mmenu
 	display: none
@@ -272,8 +273,10 @@ a
 			padding: 25px 15px
 			&:hover
 				background-color: #222
-				> ul
-					display: block
+				> div 
+					overflow: auto
+					> ul
+						display: block
 			ul
 				display: none
 				top: 0
@@ -284,11 +287,18 @@ a
 				li
 					font-size: 16px
 					padding: 10px 15px
+	span svg polyline
+		stroke: #fff
+
 #menuToggle
+	top: 15px
+	right: -10px
+	cursor: pointer
+	position: relative
 	input
 		display: block
-		width: 100px
-		height: 120px
+		width: 40px
+		height: 40px
 		position: absolute
 		top: -7px
 		left: -5px
@@ -316,11 +326,8 @@ a
 		z-index: 1
 		transform-origin: 4px 0px
 		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease
-
 		&:first-child
 			transform-origin: 0% 0%
 
 		&:nth-last-child(2)
 			transform-origin: 0% 100%
-
-

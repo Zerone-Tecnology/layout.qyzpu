@@ -85,21 +85,23 @@
 					height: 250px
 					&:nth-child(3),&:nth-child(4)
 						width: 100%
-		&.sec-3 ul li
-			font-size: 16px
-		&.sec-4 .news-block-main 
+		// why qyzpu
+		&.sec-3
 			.blocks
-				flex-direction: column
-				.block-left, .block-right
+				flex-wrap: wrap
+		// news
+		&.sec-4
+			.blocks
+				flex-wrap: wrap
+				.left-side,.right-side
 					width: 100%
-			.date, .block-right
-				margin-bottom: 15px
+				
 		&.sec-5 
 			.blocks 
-				li
+				.block
 					width: 100%
-					&:nth-child(1), &:nth-child(2),&:nth-child(3)
-						border-top: none
+					&:first-child
+						width: 100%
 		&.sec-6 .block 
 			.content
 				width: 90%

@@ -3246,6 +3246,10 @@ body textarea:required:valid {
 .section.sec-4 .btn-more-link .arr-bg .arrow::after, .section.sec-4 .btn-more-link .arr-bg .arrow::before {
   background-color: #fff;
 }
+.section.sec-4 .blocks {
+  display: flex;
+  gap: 25px;
+}
 .section.sec-4 .left-side {
   width: 60%;
 }
@@ -3284,6 +3288,9 @@ body textarea:required:valid {
   background-color: #EFEFEF;
   max-height: 220px;
   gap: 15px;
+}
+.section.sec-4 .right-side .block:first-child {
+  display: none;
 }
 .section.sec-4 .right-side .img-wrap {
   overflow: hidden;
@@ -3496,53 +3503,6 @@ body textarea:required:valid {
 }
 .section.sec-8 .block .img {
   width: 250px;
-  position: absolute;
-  object-fit: cover;
-}
-.section.sec-8 .block:nth-child(1) {
-  left: 0;
-  top: 30%;
-}
-.section.sec-8 .block:nth-child(2) {
-  left: 0;
-  top: 20%;
-}
-.section.sec-8 .block:nth-child(2) .img {
-  width: 300px;
-}
-.section.sec-8 .block:nth-child(3) {
-  left: 16%;
-  top: 0;
-}
-.section.sec-8 .block:nth-child(4) {
-  left: 45%;
-  top: 0;
-}
-.section.sec-8 .block:nth-child(5) {
-  left: 70%;
-  top: 8%;
-}
-.section.sec-8 .block:nth-child(5) .img {
-  width: 300px;
-}
-.section.sec-8 .block:nth-child(6) {
-  left: 70%;
-  top: 50%;
-}
-.section.sec-8 .block:nth-child(7) {
-  left: 80%;
-  top: 46%;
-}
-.section.sec-8 .block:nth-child(8) {
-  left: 50%;
-  top: 70%;
-}
-.section.sec-8 .block:nth-child(9) {
-  left: 23%;
-  top: 55%;
-}
-.section.sec-8 .block:nth-child(9) .img {
-  width: 300px;
 }
 
 .footer {
@@ -3656,23 +3616,20 @@ body textarea:required:valid {
   .section.sec-2 .block-wrap .block:nth-child(3), .section.sec-2 .block-wrap .block:nth-child(4) {
     width: 100%;
   }
-  .section.sec-3 ul li {
-    font-size: 16px;
+  .section.sec-3 .blocks {
+    flex-wrap: wrap;
   }
-  .section.sec-4 .news-block-main .blocks {
-    flex-direction: column;
+  .section.sec-4 .blocks {
+    flex-wrap: wrap;
   }
-  .section.sec-4 .news-block-main .blocks .block-left, .section.sec-4 .news-block-main .blocks .block-right {
+  .section.sec-4 .blocks .left-side, .section.sec-4 .blocks .right-side {
     width: 100%;
   }
-  .section.sec-4 .news-block-main .date, .section.sec-4 .news-block-main .block-right {
-    margin-bottom: 15px;
-  }
-  .section.sec-5 .blocks li {
+  .section.sec-5 .blocks .block {
     width: 100%;
   }
-  .section.sec-5 .blocks li:nth-child(1), .section.sec-5 .blocks li:nth-child(2), .section.sec-5 .blocks li:nth-child(3) {
-    border-top: none;
+  .section.sec-5 .blocks .block:first-child {
+    width: 100%;
   }
   .section.sec-6 .block .content {
     width: 90%;
