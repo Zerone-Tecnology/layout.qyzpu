@@ -1714,6 +1714,13 @@ body textarea:required:valid {
   .section.sec-5 .blocks .block:first-child {
     width: 100%;
   }
+  .section.sec-5 .blocks .block:first-child a {
+    text-transform: none;
+    font-size: inherit;
+  }
+  .section.sec-6 .blocks .block {
+    width: 100%;
+  }
   .footer .b-right {
     text-align: center;
   }
