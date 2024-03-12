@@ -36,6 +36,12 @@ $(function() {
 		$('#mmenu').toggleClass('active');
 	})
 
+	$('#mmenu li a').on('click', function(){
+		$('#mmenu ul ul').removeClass('active');
+		$(this).parent().find('ul').addClass('active');
+		// console.log('click');
+	})
+
 	// megamenu
 	// // $('#mmenu').each(function(){
 	// // 	$(this).on('click', function(e){
