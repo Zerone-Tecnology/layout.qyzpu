@@ -385,8 +385,17 @@ a:hover {
   font-weight: normal;
   font-size: inherit;
 }
-#mmenu span svg polyline {
-  stroke: #fff;
+#mmenu .bottomLinks {
+  color: #fff;
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+}
+#mmenu .bottomLinks span {
+  font-size: 12px;
+}
+#mmenu .bottomLinks li a {
+  font-size: 14px;
 }
 
 .mainMenu {
