@@ -123,6 +123,15 @@ a:hover {
   display: inline-block;
   vertical-align: middle;
 }
+.header .search-wrap {
+  position: relative;
+  background-color: #287878;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 15px;
+  margin-right: 25px;
+}
 .header .block {
   display: inline-block;
   vertical-align: middle;
@@ -145,62 +154,21 @@ a:hover {
   text-align: center;
   margin-top: -25px;
 }
-.header .lang_block {
-  position: relative;
-  margin: auto 25px;
+.header .logo img {
+  float: left;
+  margin-right: 15px;
+  width: 70px;
 }
-.header .lang_block:hover ul {
-  display: block;
-}
-.header .lang_block:hover ul li {
-  border-radius: 5px;
-}
-.header .lang_block:hover ul li:hover {
-  background-color: #575757;
-}
-.header .lang_block:hover ul li:hover a {
-  color: #fff;
-}
-.header .lang_block .icon.lang {
-  width: 30px;
-  height: 25px;
-  background-position: 0 0;
-}
-.header .lang_block ul {
-  display: none;
-  position: absolute;
-  background: #fff;
-  padding: 5px;
-  border-radius: 5px;
-  z-index: 5;
-}
-.header .lang_block ul li {
-  display: block;
-  text-align: center;
-  border-radius: 5px;
-  margin: 5px 0;
-}
-.header .lang_block ul li a {
-  text-decoration: none;
-}
-.header .lang_block ul li.active {
-  background-color: #287878;
-}
-.header .lang_block ul li.active a {
-  color: #fff;
-  padding: 10px;
-}
-.header .serach_block {
-  text-align: right;
-}
-.header .serach_block input[type=text] {
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
+.header .logo p {
+  font-size: 30px;
+  text-align: left;
+  line-height: 1em;
 }
 
 .col-right {
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .social_block .icon {
@@ -419,7 +387,7 @@ a:hover {
 .mainMenu #menuToggle::after {
   content: "";
   position: absolute;
-  top: -15px;
+  top: -12px;
   left: -10px;
   background-color: #287878;
   width: 50px;
@@ -437,18 +405,6 @@ a:hover {
   opacity: 0;
   z-index: 2;
   -webkit-touch-callout: none;
-}
-.mainMenu #menuToggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(2px, 0px);
-  background: #fff;
-}
-.mainMenu #menuToggle input:checked ~ span:nth-last-child(1) {
-  transform: rotate(-45deg) translate(0, -1px);
-}
-.mainMenu #menuToggle input:checked ~ span:nth-last-child(2) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
 }
 .mainMenu #menuToggle span {
   display: block;
