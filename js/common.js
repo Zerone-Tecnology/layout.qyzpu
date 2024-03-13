@@ -40,7 +40,12 @@ $(function() {
 		$('#mmenu ul ul').removeClass('active');
 		$(this).parent().find('ul').addClass('active');
 		burMenuBg = $(this).parent().data('bg-img');
-		console.log('bg: '+burMenuBg);
+		if(burMenuBg){
+			$("#mmenu").css("background", "url(img/"+burMenuBg+")");
+		} else {
+			$("#mmenu").css("background", "#000");
+		}
+		// console.log('bg: '+burMenuBg);
 	})
 
 	// megamenu

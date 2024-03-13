@@ -298,11 +298,24 @@ a:hover {
   z-index: 99;
   background-color: #000;
   transition: all 0.25s ease;
+  overflow: auto;
+}
+#mmenu::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 0;
 }
 #mmenu .menuLogo {
   padding: 25px 0 0 50px;
   display: flex;
   color: #fff;
+  z-index: 2;
+  position: relative;
 }
 #mmenu .menuLogo img {
   width: 50px;
@@ -319,6 +332,7 @@ a:hover {
   right: 25px;
   top: 15px;
   padding-left: 35px;
+  cursor: pointer;
 }
 #mmenu .mmenuClose::after {
   content: "";
@@ -343,6 +357,7 @@ a:hover {
   padding: 20px 0 0 20px;
   position: relative;
   width: 100%;
+  z-index: 2;
 }
 #mmenu ul li {
   display: block;
