@@ -39,7 +39,8 @@ $(function() {
 	$('#mmenu li a').on('click', function(){
 		$('#mmenu ul ul').removeClass('active');
 		$(this).parent().find('ul').addClass('active');
-		// console.log('click');
+		burMenuBg = $(this).parent().data('bg-img');
+		console.log('bg: '+burMenuBg);
 	})
 
 	// megamenu
