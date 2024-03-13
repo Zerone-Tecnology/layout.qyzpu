@@ -361,10 +361,11 @@ a:hover {
 }
 #mmenu ul li {
   display: block;
-  font-size: 24px;
-  padding: 25px 15px;
+  font-size: 40px;
+  padding: 15px 15px;
   animation: menu 1.5s;
   width: 20%;
+  line-height: 1em;
 }
 #mmenu ul li ul.active {
   display: flex;
@@ -403,6 +404,9 @@ a:hover {
   position: fixed;
   bottom: 15px;
   left: 15px;
+  background: #000;
+  border-top: 1px solid #444;
+  padding: 0;
 }
 #mmenu .bottomLinks span {
   font-size: 18px;
@@ -415,6 +419,7 @@ a:hover {
 #mmenu .bottomLinks li {
   display: inline-block;
   width: auto;
+  padding: 5px 15px;
 }
 #mmenu .bottomLinks li a {
   font-size: 14px;
