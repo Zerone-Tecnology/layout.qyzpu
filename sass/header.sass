@@ -229,9 +229,10 @@ a
 	background-color: #000
 	transition: all .25s ease
 	overflow: auto
+	padding-bottom: 80px
 	&::after
 		content: ''
-		position: absolute
+		position: fixed
 		top: 0
 		left: 0
 		bottom: 0
@@ -324,11 +325,12 @@ a
 	.bottomLinks
 		color: #fff
 		position: fixed
-		bottom: 15px
-		left: 15px
+		bottom: 0
+		left: 0
 		background: #000
 		border-top: 1px solid #444
-		padding: 0
+		padding: 0 15px
+
 		span
 			font-size: 18px
 			color: #eee
