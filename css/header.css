@@ -152,13 +152,16 @@ a:hover {
 .header .top_left li a:hover {
   text-decoration: underline;
 }
-.header .addres {
-  margin-left: 10px;
-  vertical-align: bottom;
+.header .top-menu-wrap ul li {
+  display: inline-block;
+  padding: 15px;
+}
+.header .top-menu-wrap ul li a {
+  color: #fff;
+  font-size: 16px;
 }
 .header .logo {
   text-align: center;
-  margin-top: -25px;
 }
 .header .logo img {
   float: left;
@@ -397,6 +400,7 @@ a:hover {
   left: 25%;
   top: 0;
   width: 75%;
+  margin-bottom: 80px;
 }
 #mmenu ul li ul li {
   font-size: 16px;
