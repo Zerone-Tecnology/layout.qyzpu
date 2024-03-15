@@ -159,6 +159,7 @@ a:hover {
 .header .top-menu-wrap ul li a {
   color: #fff;
   font-size: 16px;
+  font-weight: 500;
 }
 .header .logo {
   text-align: center;
@@ -169,7 +170,7 @@ a:hover {
   width: 80px;
 }
 .header .logo p {
-  font-size: 24px;
+  font-size: 23px;
   text-align: left;
   line-height: 1em;
 }
@@ -235,7 +236,6 @@ a:hover {
 }
 .top-slider .title {
   font-size: 44px;
-  font-family: "Catallina";
 }
 .top-slider .content {
   width: 40%;
@@ -248,6 +248,7 @@ a:hover {
   color: #fff;
   text-shadow: 0 0 4px #000;
   z-index: 2;
+  font-weight: 500;
 }
 
 * {

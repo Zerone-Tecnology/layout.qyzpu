@@ -1267,10 +1267,9 @@ body textarea:required:valid {
 }
 .section .title {
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   color: #575757;
-  font-family: "Catallina";
 }
 .section .title.title-h {
   border-bottom: 1px solid #D5D5D4;
