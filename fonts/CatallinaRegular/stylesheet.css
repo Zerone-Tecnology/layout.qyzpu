@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Catallina';
+    src: url('Catallina-Regular.eot');
+    src: url('Catallina-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Catallina-Regular.woff2') format('woff2'),
+        url('Catallina-Regular.woff') format('woff'),
+        url('Catallina-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

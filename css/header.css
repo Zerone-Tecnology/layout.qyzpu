@@ -26,12 +26,19 @@
   font-style: italic;
   font-display: swap;
 }
+@font-face {
+  font-family: "Catallina";
+  src: url("../fonts/CatallinaRegular/Catallina-Regular.woff2") format("woff2"), url("../fonts/CatallinaRegular/Catallina-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
 body {
   font-size: 16px;
   min-width: 320px;
   position: relative;
   line-height: 1.6;
-  font-family: "Gilroy", "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   margin: 0;
 }
@@ -109,7 +116,7 @@ a:hover {
 }
 
 .header {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   color: #fff;
   padding: 15px 0;
   font-size: 14px;
@@ -156,10 +163,10 @@ a:hover {
 .header .logo img {
   float: left;
   margin-right: 15px;
-  width: 70px;
+  width: 80px;
 }
 .header .logo p {
-  font-size: 30px;
+  font-size: 24px;
   text-align: left;
   line-height: 1em;
 }
@@ -219,9 +226,13 @@ a:hover {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   bottom: 0;
   left: 0;
+}
+.top-slider .title {
+  font-size: 44px;
+  font-family: "Catallina";
 }
 .top-slider .content {
   width: 40%;
@@ -235,17 +246,14 @@ a:hover {
   text-shadow: 0 0 4px #000;
   z-index: 2;
 }
-.top-slider .content b {
-  font-size: 44px;
-}
 
 * {
   box-sizing: border-box;
 }
 
 .video-background {
-  background-image: url("https://i9.ytimg.com/vi_webp/o34jaoD8r_E/mq2.webp?sqp=CLSavK8G-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGFsgYShlMA8=&rs=AOn4CLB_vrS4WolcI9XSKcnEVLAMcNAAeA");
-  background-size: contain;
+  background-image: url("../img/head-bg.jpg");
+  background-size: cover;
   position: fixed;
   top: 0;
   right: 0;
@@ -403,6 +411,7 @@ a:hover {
   position: relative;
   left: 0;
   padding: 0;
+  width: 100%;
 }
 #mmenu ul li ul li li {
   display: block;
@@ -487,8 +496,8 @@ a:hover {
 .mainMenu #menuToggle span {
   display: block;
   width: 27px;
-  height: 3px;
-  margin-bottom: 5px;
+  height: 1px;
+  margin-bottom: 7px;
   position: relative;
   background: #fff;
   border-radius: 3px;

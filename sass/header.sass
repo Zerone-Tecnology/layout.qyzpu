@@ -6,7 +6,7 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.6
-	font-family: 'Gilroy', 'Montserrat', sans-serif
+	font-family: 'Montserrat', sans-serif
 	overflow-x: hidden
 	margin: 0
 
@@ -68,9 +68,7 @@ a
 	width: 100%
 
 .header
-	// background-color: $accent
-	background: rgb(0,0,0,.4)
-	// background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)
+	background: rgb(0,0,0,.5)
 	color: #fff
 	padding: 15px 0
 	font-size: 14px
@@ -110,9 +108,9 @@ a
 		img
 			float: left
 			margin-right: 15px
-			width: 70px
+			width: 80px
 		p
-			font-size: 30px
+			font-size: 24px
 			text-align: left
 			line-height: 1em
 
@@ -160,9 +158,12 @@ a
 		position: absolute
 		height: 100%
 		width: 100%
-		background: rgb(0,0,0,.4)
+		background: rgb(0,0,0,.5)
 		bottom: 0
 		left: 0
+	.title
+		font-size: 44px
+		font-family: 'Catallina'
 	.content
 		width: 40%
 		position: absolute
@@ -174,14 +175,12 @@ a
 		color: #fff
 		text-shadow: 0 0 4px #000
 		z-index: 2
-		b
-			font-size: 44px
 *
 	box-sizing: border-box
 
 .video-background
-	background-image: url('https://i9.ytimg.com/vi_webp/o34jaoD8r_E/mq2.webp?sqp=CLSavK8G-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGFsgYShlMA8=&rs=AOn4CLB_vrS4WolcI9XSKcnEVLAMcNAAeA')
-	background-size: contain
+	background-image: url('../img/head-bg.jpg')
+	background-size: cover
 	position: fixed
 	top: 0
 	right: 0
@@ -316,6 +315,7 @@ a
 						position: relative
 						left: 0
 						padding: 0
+						width: 100%
 					li
 						display: block
 						width: 100%
@@ -387,8 +387,8 @@ a
 		span
 			display: block
 			width: 27px
-			height: 3px
-			margin-bottom: 5px
+			height: 1px
+			margin-bottom: 7px
 			position: relative
 			background: #fff
 			border-radius: 3px

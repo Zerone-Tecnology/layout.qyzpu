@@ -29,6 +29,13 @@
   font-style: italic;
   font-display: swap;
 }
+@font-face {
+  font-family: "Catallina";
+  src: url("../fonts/CatallinaRegular/Catallina-Regular.woff2") format("woff2"), url("../fonts/CatallinaRegular/Catallina-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -1263,6 +1270,7 @@ body textarea:required:valid {
   font-weight: 600;
   text-transform: uppercase;
   color: #575757;
+  font-family: "Catallina";
 }
 .section .title.title-h {
   border-bottom: 1px solid #D5D5D4;
