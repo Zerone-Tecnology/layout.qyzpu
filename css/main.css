@@ -1621,17 +1621,47 @@ body textarea:required:valid {
 .footer .b-center {
   text-align: center;
 }
-.footer .b-center .img {
-  width: 80%;
+.footer .block-logo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 45px 0;
 }
-.footer .b-right {
-  text-align: right;
+.footer .block-logo img {
+  width: 80px;
+  height: 80px;
 }
-.footer .b-right .img {
-  width: 120px;
+.footer .block-logo p {
+  width: 250px;
+  text-align: left;
+  padding-left: 15px;
+  margin: 0;
 }
 .footer .copy {
   text-align: center;
+}
+.footer .bottomMainMenu ul {
+  width: 100%;
+}
+.footer .bottomMainMenu ul li {
+  width: 24%;
+  vertical-align: top;
+  display: inline-block;
+}
+.footer .bottomMainMenu ul li a {
+  font-size: 16px;
+  font-weight: 600;
+}
+.footer .bottomMainMenu ul li ul li {
+  width: 100%;
+  padding: 0 15px;
+}
+.footer .bottomMainMenu ul li ul li a {
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer .bottomMainMenu ul li ul ul {
+  display: none;
 }
 
 /*==========  Desktop First Method  ==========*/

@@ -34,6 +34,8 @@ $(function() {
 
 	$('.mmenu').on('click', function(){
 		$('#mmenu').toggleClass('active');
+		$('#mmenu ul ul').removeClass('active');
+		$("#mmenu").css("background", "#000");
 	})
 
 	$('#mmenu li a').on('click', function(){

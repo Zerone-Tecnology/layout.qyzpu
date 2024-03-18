@@ -70,18 +70,13 @@ a
 	font-weight: 300
 	height: 100%
 	position: relative
-	&::before
-		content: ''
-		display: inline-block
-		vertical-align: middle
-		// height: 100%
 	.search-wrap
 		position: relative
 		background-color: $accent
 		width: 50px
 		height: 50px
 		border-radius: 50%
-		padding: 15px
+		padding: 11px
 		margin-right: 25px
 	.block
 		display: inline-block
@@ -176,6 +171,13 @@ a
 		text-shadow: 0 0 4px #000
 		z-index: 2
 		font-weight: 500
+#scrollBottom
+	position: absolute
+	left: 0
+	right: 0
+	width: 100%
+	bottom: 45px
+	text-align: center
 *
 	box-sizing: border-box
 
@@ -227,7 +229,7 @@ a
 	height: 100%
 	z-index: 99
 	background-color: #000
-	transition: all .25s ease
+	transition: all .25s ease-in-out
 	overflow: auto
 	padding-bottom: 80px
 	&::after
@@ -285,9 +287,10 @@ a
 			display: block
 			font-size: 40px
 			padding: 15px 15px
-			animation: menu 1.5s
+			animation: menu .5s
 			width: 25%
 			line-height: 1em
+			font-weight: 500
 			a
 				transition: background-size .3s
 				background-position: 0 100%
@@ -310,7 +313,7 @@ a
 				margin-top: 0
 				li
 					font-size: 16px
-					padding: 15px
+					padding: 15px 15px 15px 0
 					width: 25%
 					a
 						font-weight: bold
@@ -320,6 +323,8 @@ a
 						left: 0
 						padding: 0
 						width: 100%
+						margin-top: 15px
+						margin-left: 0
 					li
 						display: block
 						width: 100%
