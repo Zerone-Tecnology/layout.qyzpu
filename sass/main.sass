@@ -318,8 +318,15 @@ body textarea:required:valid
 					margin-right: 15px
 					img 
 						width: 100%
+// pages
+.header.page
+
+.page
+	.sec-2
+		margin-top: 55px	
+
 .footer
-	background-color: $accent
+	background-color: $gray
 	color: #fff
 	padding-top: 30px
 	a
@@ -362,7 +369,24 @@ body textarea:required:valid
 							font-weight: 400
 					ul
 						display: none
-				
+
+@keyframes fadeInUp
+	0%
+		opacity: 0
+		-webkit-transform: translate3d(0, 70px, 0)
+		-ms-transform: translate3d(0, 70px, 0)
+		transform: translate3d(0, 70px, 0)
+
+	100%
+		opacity: 1
+		-webkit-transform: none
+		-ms-transform: none
+		transform: none
+
+
+.fadeInUp
+	-webkit-animation-name: fadeInUp
+	animation-name: fadeInUp
 
 //ALWAYS END
 @import "media"
