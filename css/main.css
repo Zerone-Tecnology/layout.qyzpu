@@ -3052,7 +3052,7 @@ body textarea:required:valid {
   color: #303030;
 }
 .section .title.title-h {
-  border-bottom: 1px solid #D5D5D4;
+  border-bottom: 1px solid #EFEFEF;
   margin-bottom: 40px;
 }
 .section.lcolor {
@@ -3321,7 +3321,7 @@ body textarea:required:valid {
   padding-bottom: 55px;
 }
 .section.sec-5 .title {
-  border-bottom: 1px solid #D5D5D4;
+  border-bottom: 1px solid #EFEFEF;
   margin-bottom: 55px;
 }
 .section.sec-5 .blocks {
@@ -3356,7 +3356,7 @@ body textarea:required:valid {
   color: #287878;
 }
 .section.sec-5 .blocks .block .date {
-  color: #D5D5D4;
+  color: #EFEFEF;
   margin-top: 15px;
 }
 .section.sec-5 .blocks .block.last {
@@ -3398,7 +3398,7 @@ body textarea:required:valid {
   background-color: #303030;
 }
 
-.page .sec-2 {
+.page .section {
   margin-top: 55px;
 }
 
@@ -3438,7 +3438,7 @@ body textarea:required:valid {
   position: absolute;
   bottom: 0;
   width: 100%;
-  border-bottom: 4px solid #D5D5D4;
+  border-bottom: 4px solid #EFEFEF;
 }
 .tabs-wrap .tab-indicator > div {
   position: absolute;
@@ -3467,6 +3467,75 @@ body textarea:required:valid {
   opacity: 1;
   position: relative;
   transition: top 0ms ease-in-out 0ms, opacity 500ms ease-in-out 0ms;
+}
+
+.bg-color {
+  background-color: #EFEFEF;
+  padding: 55px 0;
+}
+
+.admission-usefull .blocks-wrap {
+  display: flex;
+}
+.admission-usefull .blocks-wrap .block {
+  width: 33%;
+  padding: 15px;
+}
+.admission-usefull .blocks-wrap .block .img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.admission-usefull .blocks-wrap .block .img-wrap .b-title {
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  font-weight: 700;
+  top: 40%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 24px;
+}
+.admission-usefull .blocks-wrap .block .img-wrap img {
+  width: 100%;
+  height: 100%;
+}
+.admission-usefull .blocks-wrap .block .content {
+  background-color: #fff;
+  padding: 15px;
+}
+.admission-usefull .blocks-wrap .block .programms-list a {
+  font-weight: 600;
+}
+.admission-usefull .blocks-wrap .block .btn-more-link {
+  font-size: 14px;
+  display: flex;
+  justify-content: end;
+  margin-top: 25px;
+}
+.admission-usefull .blocks-wrap .block .btn-more-link .arr-bg {
+  width: 35px;
+  height: 35px;
+  margin-left: 15px;
+}
+.admission-usefull .blocks-wrap .block .btn-more-link .arr-bg .arrow {
+  top: 15px;
+  left: 9px;
+}
+
+.counts {
+  text-align: center;
+}
+.counts .num {
+  font-size: 32px;
+  color: #e1c88a;
+  font-weight: 600;
+  margin-top: 35px;
+}
+.counts p {
+  margin: 0;
+  font-weight: 500;
 }
 
 .footer {
