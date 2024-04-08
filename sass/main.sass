@@ -334,18 +334,45 @@ body textarea:required:valid
 	background-color: $accent
 	vertical-align: middle
 	background-size: cover
+	position: relative
+	overflow: hidden
+	&::after
+		content: ''
+		background: rgb(0,0,0)
+		background: linear-gradient(6deg, rgba(0,0,0,6) 0%, rgba(0,0,0,0) 100%)
+		width: 100%
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		z-index: 1
 	.bradcrumbs-wrap
 		display: flex
 		height: 300px
 		color: #fff
 		flex-direction: column
 		justify-content: flex-end
+		z-index: 2
+		position: relative
 		a
 			color: #fff
 			font-size: 18px
 		ul
 			li
 				display: inline-block
+				position: relative
+				margin-right: 25px
+				&::after
+					content: ''
+					position: absolute
+					width: 30px
+					height: 30px
+					background-image: url('../img/arr.png')
+					background-repeat: no-repeat
+					background-size: cover
+				&:last-child
+					&::after
+						content: none
 		.h-title
 			font-size: 42px
 			display: block
@@ -399,10 +426,12 @@ body textarea:required:valid
 			padding: 20px
 			opacity: 0
 			top: -100vh
+			z-index: -1
 			> *
 				margin: 10px
 			&.active
 				top: 0
+				z-index: 1
 				opacity: 1
 				position: relative
 				transition: top 0ms ease-in-out 0ms, opacity 500ms ease-in-out 0ms
@@ -448,7 +477,46 @@ body textarea:required:valid
 					// width: 35px
 					// height: 35px
 					margin-left: 15px
-				
+
+.admission-info				
+	.programm-list
+		background-image: url('../img/bg-bachelor-list.jpg')
+		background-size: cover
+		width: 70%
+		margin: 55px auto
+		> li
+			border: 7px solid #fff	
+			background: linear-gradient(90deg, rgba(0,0,0,.8) 0%, rgba(0,0,0,0) 100%)
+			position: relative
+			a
+				display: block
+				padding: 15px
+				color: #fff
+				font-weight: 600
+	.admis-popup
+		position: absolute
+		display: none
+		width: 100%
+		background-color: #fff
+		padding: 25px
+		z-index: 9
+		top: 0
+		&::after
+			content: ''
+			position: fixed
+			top: 0
+			left: 0
+			width: 100%
+			height: 100vh
+			background-color: #0000008c
+			z-index: -1
+		&.active
+			display: block
+		ul li
+			border-bottom: 1px solid #dadada
+			background: #fff
+			a
+				color: $accent
 .counts
 	text-align: center
 	.num

@@ -1,6 +1,13 @@
 $(function() {
 
 	new WOW().init();
+	$('.programm-list li a').on('click', function(e){
+		var link = e.target.hash;
+		$(link).toggleClass('active');
+	})
+	$('.btn-pop-close').on('click', function(){
+		$('.admis-popup').removeClass('active');
+	})
 
 	let tabs = document.querySelector(".tabs-wrap");
 	let tabHeader = tabs.querySelector(".tab-header");
