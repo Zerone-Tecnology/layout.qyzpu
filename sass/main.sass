@@ -326,9 +326,31 @@ body textarea:required:valid
 		background-color: $gray
 	.mainMenu #menuToggle
 		background-color: $gray
+
 .page
 	.section
 		margin-top: 55px
+.bradcrumbs
+	background-color: $accent
+	vertical-align: middle
+	background-size: cover
+	.bradcrumbs-wrap
+		display: flex
+		height: 300px
+		color: #fff
+		flex-direction: column
+		justify-content: flex-end
+		a
+			color: #fff
+			font-size: 18px
+		ul
+			li
+				display: inline-block
+		.h-title
+			font-size: 42px
+			display: block
+			width: 100%
+			margin-bottom: 25px
 
 .clearfix
 	clear: both
@@ -422,12 +444,10 @@ body textarea:required:valid
 				justify-content: end
 				margin-top: 25px
 				.arr-bg
-					width: 35px
-					height: 35px
+					transform: scale(.6) rotate(45deg)
+					// width: 35px
+					// height: 35px
 					margin-left: 15px
-					.arrow
-						top: 15px
-						left: 9px
 				
 .counts
 	text-align: center
@@ -439,6 +459,15 @@ body textarea:required:valid
 	p
 		margin: 0
 		font-weight: 500
+.contacts
+	.contact-wrap
+		p
+			img
+				margin-right: 10px
+		span
+			margin-left: 10px
+			font-size: 12px
+			color: #828282
 .footer
 	background-color: $gray
 	color: #fff

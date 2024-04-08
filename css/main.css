@@ -3402,6 +3402,32 @@ body textarea:required:valid {
   margin-top: 55px;
 }
 
+.bradcrumbs {
+  background-color: #287878;
+  vertical-align: middle;
+  background-size: cover;
+}
+.bradcrumbs .bradcrumbs-wrap {
+  display: flex;
+  height: 300px;
+  color: #fff;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.bradcrumbs .bradcrumbs-wrap a {
+  color: #fff;
+  font-size: 18px;
+}
+.bradcrumbs .bradcrumbs-wrap ul li {
+  display: inline-block;
+}
+.bradcrumbs .bradcrumbs-wrap .h-title {
+  font-size: 42px;
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
 .clearfix {
   clear: both;
 }
@@ -3515,13 +3541,8 @@ body textarea:required:valid {
   margin-top: 25px;
 }
 .admission-usefull .blocks-wrap .block .btn-more-link .arr-bg {
-  width: 35px;
-  height: 35px;
+  transform: scale(0.6) rotate(45deg);
   margin-left: 15px;
-}
-.admission-usefull .blocks-wrap .block .btn-more-link .arr-bg .arrow {
-  top: 15px;
-  left: 9px;
 }
 
 .counts {
@@ -3536,6 +3557,15 @@ body textarea:required:valid {
 .counts p {
   margin: 0;
   font-weight: 500;
+}
+
+.contacts .contact-wrap p img {
+  margin-right: 10px;
+}
+.contacts .contact-wrap span {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #828282;
 }
 
 .footer {
