@@ -3387,8 +3387,60 @@ body textarea:required:valid {
   width: 100%;
 }
 
+.header.page {
+  background-color: #287878;
+  padding: 0;
+}
+.header.page .search-wrap {
+  background-color: #303030;
+}
+.header.page .mainMenu #menuToggle {
+  background-color: #303030;
+}
+
 .page .sec-2 {
   margin-top: 55px;
+}
+
+.tabs-wrap {
+  position: relative;
+  display: block;
+  height: 100vh;
+}
+.tabs-wrap .tab {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  padding: 25px;
+  transition: all 500ms ease;
+}
+.tabs-wrap .tab:first-child {
+  z-index: 1;
+}
+.tabs-wrap .tab h3 {
+  position: absolute;
+  margin: 0;
+  height: 40px;
+  width: 220px;
+  background-color: #D5D5D4;
+  text-align: center;
+  font-weight: 400;
+  top: -40px;
+  transition: all 500ms ease;
+}
+.tabs-wrap .tab:nth-child(2) h3 {
+  left: 220px;
+}
+.tabs-wrap .tab:target {
+  color: #000;
+  background-color: #fff;
+  z-index: 2;
+}
+.tabs-wrap .tab:target h3 {
+  background-color: #287878;
+}
+.tabs-wrap .tab:target h3 a {
+  color: #fff;
 }
 
 .footer {
@@ -3407,9 +3459,7 @@ body textarea:required:valid {
 }
 .footer .block-logo {
   display: flex;
-  text-align: center;
-  justify-content: center;
-  margin: 45px 0;
+  margin: 0 0 45px;
 }
 .footer .block-logo img {
   width: 80px;
@@ -3420,6 +3470,12 @@ body textarea:required:valid {
   text-align: left;
   padding-left: 15px;
   margin: 0;
+}
+.footer .contact-block p {
+  margin: 0;
+}
+.footer .contact-block a {
+  color: #e1c88a;
 }
 .footer .copy {
   text-align: center;
