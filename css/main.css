@@ -3495,6 +3495,7 @@ body textarea:required:valid {
   display: block;
   width: 100%;
   margin-bottom: 25px;
+  line-height: 1em;
 }
 
 .clearfix {
@@ -3623,7 +3624,8 @@ body textarea:required:valid {
   margin: 55px auto;
 }
 .admission-info .programm-list > li {
-  border: 7px solid #fff;
+  border-top: 7px solid #fff;
+  border-bottom: 7px solid #fff;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
   position: relative;
 }
@@ -3866,8 +3868,32 @@ body textarea:required:valid {
   .admission-usefull .blocks-wrap .block {
     width: 100%;
   }
+  .admission-info .programm-list {
+    width: 90%;
+  }
+  .admission-info .admis-popup {
+    padding: 0;
+  }
+  .admission-info .admis-popup .btn-pop-close {
+    right: 5px;
+    top: 5px;
+  }
+  .admission-info .admis-popup ul li::after {
+    right: 5%;
+  }
+  .footer .bottomMainMenu ul li {
+    width: 100%;
+  }
 }
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .bradcrumbs .bradcrumbs-wrap .h-title {
+    font-size: 32px;
+  }
+  .admission-info .programm-list {
+    width: 100%;
+  }
+}
 /* Custom, iPhone Retina */
 /*==========  Desktop First Method  ==========*/
 @media only screen and (max-width: 1440px) {
