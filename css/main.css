@@ -3670,6 +3670,55 @@ body textarea:required:valid {
   color: #287878;
 }
 
+.program-head .p-code {
+  text-align: right;
+}
+.program-head .p-code span {
+  font-weight: 700;
+}
+.program-head .p-title {
+  font-size: 32px;
+  line-height: 1em;
+  font-weight: 500;
+  margin: 55px 0;
+}
+.program-head .btn-color-link {
+  background-color: #287878;
+  color: #fff;
+  display: block;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.program-head .btn-color-link:hover {
+  background-color: #1b5252;
+}
+
+.program-faq .accordion-wrap {
+  margin-top: 55px;
+}
+.program-faq .accordion-wrap .p-name {
+  border-bottom: 1px solid #c0c0c0;
+  padding: 15px;
+  cursor: pointer;
+  padding-left: 35px;
+  position: relative;
+}
+.program-faq .accordion-wrap .p-name::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icon/plus.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 0;
+}
+.program-faq .accordion-wrap .p-content {
+  padding: 15px;
+}
+
 .counts {
   text-align: center;
 }

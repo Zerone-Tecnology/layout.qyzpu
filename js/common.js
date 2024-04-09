@@ -1,6 +1,15 @@
 $(function() {
 
 	new WOW().init();
+
+	var allPanels = $('.accordion-wrap > .p-content').hide();
+    
+  $('.accordion-wrap > .p-name').click(function() {
+    allPanels.slideUp();
+    $(this).next().slideDown();
+    return false;
+  });
+
 	$('.programm-list li a').on('click', function(e){
 		var link = e.target.hash;
 		$(link).toggleClass('active');
