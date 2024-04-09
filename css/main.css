@@ -3387,6 +3387,29 @@ body textarea:required:valid {
   width: 100%;
 }
 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 70px, 0);
+    -ms-transform: translate3d(0, 70px, 0);
+    transform: translate3d(0, 70px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.section .title {
+  line-height: 1em;
+}
+
 .header.page {
   background-color: #287878;
   padding: 0;
@@ -3625,6 +3648,7 @@ body textarea:required:valid {
   padding: 25px;
   z-index: 9;
   top: 0;
+  opacity: 0;
   transition: all 0.5s ease;
 }
 .admission-info .admis-popup::after {
@@ -3639,6 +3663,7 @@ body textarea:required:valid {
 }
 .admission-info .admis-popup.active {
   display: block;
+  opacity: 1;
 }
 .admission-info .admis-popup .btn-pop-close {
   cursor: pointer;
@@ -3803,25 +3828,47 @@ body textarea:required:valid {
   display: none;
 }
 
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 70px, 0);
-    -ms-transform: translate3d(0, 70px, 0);
-    transform: translate3d(0, 70px, 0);
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .admission-usefull .blocks-wrap {
+    flex-wrap: wrap;
   }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
+  .admission-usefull .blocks-wrap .block {
+    width: 50%;
   }
 }
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .section.sec-2 .block-wrap .block {
+    width: 50%;
+  }
+  .tabs-wrap .tab-header {
+    overflow-y: scroll;
+  }
+  .tabs-wrap .tab-header > div {
+    width: auto;
+    text-wrap: nowrap;
+    padding: 0 15px;
+    padding-left: 25px;
+    position: relative;
+  }
+  .tabs-wrap .tab-header > div .icon {
+    background-image: url("../img/icon/tabs.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+  }
+  .admission-usefull .blocks-wrap .block {
+    width: 100%;
+  }
 }
-
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
 /*==========  Desktop First Method  ==========*/
 @media only screen and (max-width: 1440px) {
   .header .col-right {
