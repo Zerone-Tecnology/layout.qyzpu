@@ -3420,9 +3420,11 @@ body textarea:required:valid {
   height: 100%;
   z-index: 1;
 }
+.bradcrumbs.bg-img .bradcrumbs-wrap {
+  height: 300px;
+}
 .bradcrumbs .bradcrumbs-wrap {
   display: flex;
-  height: 300px;
   color: #fff;
   flex-direction: column;
   justify-content: flex-end;
@@ -3587,9 +3589,16 @@ body textarea:required:valid {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
   position: relative;
 }
+.admission-info .programm-list > li:hover {
+  background: #fff;
+}
+.admission-info .programm-list > li:hover a {
+  color: #303030;
+}
 .admission-info .programm-list > li a {
+  text-decoration: none;
   display: block;
-  padding: 15px;
+  padding: 20px;
   color: #fff;
   font-weight: 600;
 }
@@ -3601,6 +3610,7 @@ body textarea:required:valid {
   padding: 25px;
   z-index: 9;
   top: 0;
+  transition: all 0.5s ease;
 }
 .admission-info .admis-popup::after {
   content: "";
@@ -3615,9 +3625,31 @@ body textarea:required:valid {
 .admission-info .admis-popup.active {
   display: block;
 }
+.admission-info .admis-popup .btn-pop-close {
+  cursor: pointer;
+  background-color: #fff;
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  z-index: 3;
+}
 .admission-info .admis-popup ul li {
   border-bottom: 1px solid #dadada;
   background: #fff;
+  position: relative;
+}
+.admission-info .admis-popup ul li::after {
+  content: "";
+  background-image: url("../img/icon/arrow.svg");
+  background-size: cover;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  right: 15%;
+  top: 20px;
+}
+.admission-info .admis-popup ul li:hover a {
+  color: #287878;
 }
 .admission-info .admis-popup ul li a {
   color: #287878;

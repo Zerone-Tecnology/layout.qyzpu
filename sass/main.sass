@@ -346,9 +346,11 @@ body textarea:required:valid
 		left: 0
 		height: 100%
 		z-index: 1
+	&.bg-img
+		.bradcrumbs-wrap		
+			height: 300px
 	.bradcrumbs-wrap
 		display: flex
-		height: 300px
 		color: #fff
 		flex-direction: column
 		justify-content: flex-end
@@ -488,9 +490,15 @@ body textarea:required:valid
 			border: 7px solid #fff	
 			background: linear-gradient(90deg, rgba(0,0,0,.8) 0%, rgba(0,0,0,0) 100%)
 			position: relative
+			// transition: all .5s ease
+			&:hover
+				background: #fff
+				a
+					color: $gray
 			a
+				text-decoration: none
 				display: block
-				padding: 15px
+				padding: 20px
 				color: #fff
 				font-weight: 600
 	.admis-popup
@@ -501,6 +509,7 @@ body textarea:required:valid
 		padding: 25px
 		z-index: 9
 		top: 0
+		transition: all .5s ease
 		&::after
 			content: ''
 			position: fixed
@@ -512,9 +521,29 @@ body textarea:required:valid
 			z-index: -1
 		&.active
 			display: block
+		.btn-pop-close
+			cursor: pointer
+			background-color: #fff
+			position: absolute
+			right: 35px
+			top: 35px
+			z-index: 3
 		ul li
 			border-bottom: 1px solid #dadada
 			background: #fff
+			position: relative
+			&::after
+				content: ''
+				background-image: url('../img/icon/arrow.svg')
+				background-size: cover
+				width: 17px
+				height: 17px
+				position: absolute
+				right: 15%
+				top: 20px
+			&:hover
+				a
+					color: $accent
 			a
 				color: $accent
 .counts
