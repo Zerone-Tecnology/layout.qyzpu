@@ -3403,13 +3403,15 @@ body textarea:required:valid {
 }
 
 .bradcrumbs {
-  background-color: #287878;
   vertical-align: middle;
   background-size: cover;
   position: relative;
   overflow: hidden;
 }
-.bradcrumbs::after {
+.bradcrumbs.bg-img {
+  background-color: #287878;
+}
+.bradcrumbs.bg-img::after {
   content: "";
   background: rgb(0, 0, 0);
   background: linear-gradient(6deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
@@ -3422,18 +3424,31 @@ body textarea:required:valid {
 }
 .bradcrumbs.bg-img .bradcrumbs-wrap {
   height: 300px;
+  color: #fff;
+}
+.bradcrumbs.bg-img .bradcrumbs-wrap a {
+  color: #fff;
+}
+.bradcrumbs.bg-img .bradcrumbs-wrap ul {
+  padding: 0;
+}
+.bradcrumbs.bg-img .bradcrumbs-wrap ul li::after {
+  background-image: url("../img/arr.png");
 }
 .bradcrumbs .bradcrumbs-wrap {
   display: flex;
-  color: #fff;
   flex-direction: column;
   justify-content: flex-end;
   z-index: 2;
   position: relative;
+  color: #287878;
 }
 .bradcrumbs .bradcrumbs-wrap a {
-  color: #fff;
+  color: #287878;
   font-size: 18px;
+}
+.bradcrumbs .bradcrumbs-wrap ul {
+  padding: 50px 0;
 }
 .bradcrumbs .bradcrumbs-wrap ul li {
   display: inline-block;
@@ -3445,7 +3460,7 @@ body textarea:required:valid {
   position: absolute;
   width: 30px;
   height: 30px;
-  background-image: url("../img/arr.png");
+  background-image: url("../img/arr-color.png");
   background-repeat: no-repeat;
   background-size: cover;
 }

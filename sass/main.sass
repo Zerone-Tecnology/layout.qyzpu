@@ -331,35 +331,43 @@ body textarea:required:valid
 	.section
 		margin-top: 55px
 .bradcrumbs
-	background-color: $accent
 	vertical-align: middle
 	background-size: cover
 	position: relative
 	overflow: hidden
-	&::after
-		content: ''
-		background: rgb(0,0,0)
-		background: linear-gradient(6deg, rgba(0,0,0,6) 0%, rgba(0,0,0,0) 100%)
-		width: 100%
-		position: absolute
-		top: 0
-		left: 0
-		height: 100%
-		z-index: 1
 	&.bg-img
+		background-color: $accent
+		&::after
+			content: ''
+			background: rgb(0,0,0)
+			background: linear-gradient(6deg, rgba(0,0,0,6) 0%, rgba(0,0,0,0) 100%)
+			width: 100%
+			position: absolute
+			top: 0
+			left: 0
+			height: 100%
+			z-index: 1
 		.bradcrumbs-wrap		
 			height: 300px
+			color: #fff
+			a
+				color: #fff
+			ul
+				padding: 0
+				li::after
+					background-image: url('../img/arr.png')
 	.bradcrumbs-wrap
 		display: flex
-		color: #fff
 		flex-direction: column
 		justify-content: flex-end
 		z-index: 2
 		position: relative
+		color: $accent
 		a
-			color: #fff
+			color: $accent
 			font-size: 18px
 		ul
+			padding: 50px 0
 			li
 				display: inline-block
 				position: relative
@@ -369,7 +377,7 @@ body textarea:required:valid
 					position: absolute
 					width: 30px
 					height: 30px
-					background-image: url('../img/arr.png')
+					background-image: url('../img/arr-color.png')
 					background-repeat: no-repeat
 					background-size: cover
 				&:last-child
