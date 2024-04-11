@@ -3551,10 +3551,13 @@ body textarea:required:valid {
 .tabs-wrap .tab-body > div {
   position: absolute;
   width: 100%;
-  padding: 20px;
+  padding: 20px 0;
   opacity: 0;
   top: -100vh;
   z-index: -1;
+}
+.tabs-wrap .tab-body > div h4, .tabs-wrap .tab-body > div p {
+  padding: 15px 0;
 }
 .tabs-wrap .tab-body > div > * {
   margin: 10px;
@@ -3572,12 +3575,21 @@ body textarea:required:valid {
   padding: 55px 0;
 }
 
+.admission-usefull .title {
+  margin-bottom: 40px;
+}
 .admission-usefull .blocks-wrap {
   display: flex;
 }
 .admission-usefull .blocks-wrap .block {
   width: 33%;
   padding: 15px;
+}
+.admission-usefull .blocks-wrap .block:first-child {
+  padding-left: 0;
+}
+.admission-usefull .blocks-wrap .block:last-child {
+  padding-right: 0;
 }
 .admission-usefull .blocks-wrap .block .img-wrap {
   position: relative;
@@ -3763,6 +3775,13 @@ body textarea:required:valid {
   font-weight: 500;
 }
 
+.contacts .title {
+  margin-bottom: 40px;
+}
+.contacts .contact-wrap {
+  width: 90%;
+  margin: auto;
+}
 .contacts .contact-wrap p img {
   margin-right: 10px;
 }

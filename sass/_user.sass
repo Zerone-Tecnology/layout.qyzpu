@@ -118,10 +118,12 @@
 		> div
 			position: absolute
 			width: 100%
-			padding: 20px
+			padding: 20px 0
 			opacity: 0
 			top: -100vh
 			z-index: -1
+			h4, p
+				padding: 15px 0
 			> *
 				margin: 10px
 			&.active
@@ -136,11 +138,17 @@
 	padding: 55px 0
 
 .admission-usefull
+	.title
+		margin-bottom: 40px
 	.blocks-wrap
 		display: flex
 		.block
 			width: 33%
 			padding: 15px
+			&:first-child
+				padding-left: 0
+			&:last-child
+				padding-right: 0
 			.img-wrap
 				position: relative
 				overflow: hidden
@@ -304,7 +312,11 @@
 		font-weight: 500
 
 .contacts
+	.title
+		margin-bottom: 40px
 	.contact-wrap
+		width: 90%
+		margin: auto
 		p
 			img
 				margin-right: 10px
