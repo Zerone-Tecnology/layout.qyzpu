@@ -1,5 +1,8 @@
 $(function() {
 
+	$('#mmenu .m-wrap').clone().appendTo('#mmenu2');	
+	$('#mmenu2').mmenu();
+
 	new WOW().init();
 
 	var allPanels = $('.accordion-wrap > .p-content').hide();
@@ -66,7 +69,8 @@ $(function() {
 	});
 
 	$('.mmenu').on('click', function(){
-		$('#mmenu').toggleClass('active');
+		$('#mmenu').toggleClass('active');		
+    $('body').toggleClass('fixed');
 		$('#mmenu ul ul').removeClass('active');
 		$("#mmenu").css("background", "#000");
 	})
@@ -76,27 +80,11 @@ $(function() {
 		$(this).parent().find('ul').addClass('active');
 		burMenuBg = $(this).parent().data('bg-img');
 		if(burMenuBg){
-			$("#mmenu").css("background", "url(img/"+burMenuBg+")");
+			$("#mmenu").css("background-image", "url(img/"+burMenuBg+")");
 		} else {
 			$("#mmenu").css("background", "#000");
 		}
 		// console.log('bg: '+burMenuBg);
 	})
-
-	// megamenu
-	// // $('#mmenu').each(function(){
-	// // 	$(this).on('click', function(e){
-	// // 		$(this).find('.uk-navbar-dropdown-nav').triggerHadler('z-open');
-	// // 		e.prevendDefault();
-	// // 	});
-	// // });
-	// $('#mmenu li').on('click', function(e){
-	// 	e.preventDefault();
-	// 	// $(this).not($(this).parent().find('.uk-navbar-dropdown-nav')).parent().addClass('z-open');
-  //   // $(this).parent().find('.uk-navbar-dropdown-nav').toggleClass('z-open');
-	// 	// $(this).not($(this).parent().find('z-open')).children('div').children('ul').addClass('z-open');
-	// 	$(this).parent().find('.uk-navbar-dropdown-nav').removeClass('z-open');
-	// 	$(this).children('div').children('ul').addClass('z-open');
-	// });
 
 });
