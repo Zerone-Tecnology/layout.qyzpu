@@ -123,6 +123,7 @@
 			opacity: 0
 			top: -100vh
 			z-index: -1
+			overflow: auto
 			h4, p
 				padding: 15px 0
 			> *
@@ -391,6 +392,7 @@
 				padding: 0 15px
 				padding-left: 25px
 				position: relative
+				min-height: 25px
 				.icon
 					background-image: url('../img/icon/tabs.svg')
 					background-repeat: no-repeat
@@ -399,6 +401,11 @@
 					height: 20px
 					position: absolute
 					left: 0
+				span
+					display: none
+				&.active
+					span
+						display: block
 			
 	.admission-usefull 
 		.blocks-wrap

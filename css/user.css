@@ -182,6 +182,7 @@
   opacity: 0;
   top: -100vh;
   z-index: -1;
+  overflow: auto;
 }
 .tabs-wrap .tab-body > div h4, .tabs-wrap .tab-body > div p {
   padding: 15px 0;
@@ -486,6 +487,7 @@
     padding: 0 15px;
     padding-left: 25px;
     position: relative;
+    min-height: 25px;
   }
   .tabs-wrap .tab-header > div .icon {
     background-image: url("../img/icon/tabs.svg");
@@ -495,6 +497,12 @@
     height: 20px;
     position: absolute;
     left: 0;
+  }
+  .tabs-wrap .tab-header > div span {
+    display: none;
+  }
+  .tabs-wrap .tab-header > div.active span {
+    display: block;
   }
   .admission-usefull .blocks-wrap .block {
     width: 100%;
