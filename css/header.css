@@ -309,7 +309,7 @@ a:hover {
     display: none;
   }
 }
-#mmenu {
+#mobile-menu {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -322,7 +322,7 @@ a:hover {
   background-size: contain;
   overflow-y: scroll;
 }
-#mmenu::after {
+#mobile-menu::after {
   content: "";
   position: absolute;
   top: 0;
@@ -332,28 +332,28 @@ a:hover {
   height: 100%;
   z-index: 1;
 }
-#mmenu.active {
+#mobile-menu.active {
   display: block;
   height: 100%;
   transform: translateZ(0);
   opacity: 1;
 }
-#mmenu .m-header .menuLogo {
+#mobile-menu .m-header .menuLogo {
   padding: 25px 0 0 50px;
   display: flex;
   color: #fff;
   z-index: 2;
   position: relative;
 }
-#mmenu .m-header .menuLogo img {
+#mobile-menu .m-header .menuLogo img {
   width: 50px;
   height: 50px;
 }
-#mmenu .m-header .menuLogo p {
+#mobile-menu .m-header .menuLogo p {
   width: 250px;
   margin: 0 0 0 15px;
 }
-#mmenu .m-header .mmenuClose {
+#mobile-menu .m-header .mmenuClose {
   position: fixed;
   z-index: 9;
   color: #fff;
@@ -362,7 +362,7 @@ a:hover {
   padding-left: 35px;
   cursor: pointer;
 }
-#mmenu .m-header .mmenuClose::after {
+#mobile-menu .m-header .mmenuClose::after {
   content: "";
   position: absolute;
   background-image: url("../img/close.png");
@@ -375,32 +375,32 @@ a:hover {
   border: 1px solid #fff;
   border-radius: 50%;
 }
-#mmenu .m-wrap {
+#mobile-menu .m-wrap {
   position: absolute;
   height: 100%;
   width: 100%;
   overflow-y: scroll;
 }
-#mmenu .m-wrap .first-ul > li:nth-child(1) {
+#mobile-menu .m-wrap .first-ul > li:nth-child(1) {
   animation: menuFirst 0.6s;
 }
-#mmenu .m-wrap .first-ul > li:nth-child(2) {
+#mobile-menu .m-wrap .first-ul > li:nth-child(2) {
   animation: menuFirst 0.8s;
 }
-#mmenu .m-wrap .first-ul > li:nth-child(3) {
+#mobile-menu .m-wrap .first-ul > li:nth-child(3) {
   animation: menuFirst 1s;
 }
-#mmenu .m-wrap .first-ul > li:nth-child(4) {
+#mobile-menu .m-wrap .first-ul > li:nth-child(4) {
   animation: menuFirst 1.2s;
 }
-#mmenu .m-wrap ul {
+#mobile-menu .m-wrap ul {
   padding: 20px 0 0 20px;
   position: relative;
   width: 100%;
   z-index: 2;
   margin-top: 40px;
 }
-#mmenu .m-wrap ul li {
+#mobile-menu .m-wrap ul li {
   display: block;
   font-size: 40px;
   padding: 15px 15px;
@@ -409,22 +409,22 @@ a:hover {
   line-height: 1em;
   font-weight: 500;
 }
-#mmenu .m-wrap ul li a {
+#mobile-menu .m-wrap ul li a {
   transition: background-size 0.3s;
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 0 1px;
 }
-#mmenu .m-wrap ul li:hover > a {
+#mobile-menu .m-wrap ul li:hover > a {
   background-image: linear-gradient(currentColor, currentColor);
   text-decoration: none;
   background-size: 100% 1px;
 }
-#mmenu .m-wrap ul li ul.active {
+#mobile-menu .m-wrap ul li ul.active {
   display: flex;
   flex-wrap: wrap;
 }
-#mmenu .m-wrap ul li ul {
+#mobile-menu .m-wrap ul li ul {
   display: none;
   position: absolute;
   left: 25%;
@@ -433,16 +433,16 @@ a:hover {
   margin-bottom: 80px;
   margin-top: 0;
 }
-#mmenu .m-wrap ul li ul li {
+#mobile-menu .m-wrap ul li ul li {
   font-size: 16px;
   padding: 15px 15px 15px 0;
   width: 25%;
 }
-#mmenu .m-wrap ul li ul li a {
+#mobile-menu .m-wrap ul li ul li a {
   font-weight: bold;
   font-size: 18px;
 }
-#mmenu .m-wrap ul li ul li ul {
+#mobile-menu .m-wrap ul li ul li ul {
   position: relative;
   left: 0;
   padding: 0;
@@ -450,19 +450,19 @@ a:hover {
   margin-top: 15px;
   margin-left: 0;
 }
-#mmenu .m-wrap ul li ul li li {
+#mobile-menu .m-wrap ul li ul li li {
   display: block;
   width: 100%;
 }
-#mmenu .m-wrap ul li ul li li a {
+#mobile-menu .m-wrap ul li ul li li a {
   font-weight: normal;
   font-size: inherit;
 }
-#mmenu .m-footer {
+#mobile-menu .m-footer {
   z-index: 9;
   position: relative;
 }
-#mmenu .m-footer .bottomLinks {
+#mobile-menu .m-footer .bottomLinks {
   color: #fff;
   position: fixed;
   bottom: 0;
@@ -471,7 +471,7 @@ a:hover {
   border-top: 1px solid #444;
   padding: 0 15px;
 }
-#mmenu .m-footer .bottomLinks span {
+#mobile-menu .m-footer .bottomLinks span {
   font-size: 18px;
   color: #eee;
   background-image: url("../img/arr.png");
@@ -479,16 +479,16 @@ a:hover {
   background-position: 100% -2px;
   padding-right: 25px;
 }
-#mmenu .m-footer .bottomLinks li {
+#mobile-menu .m-footer .bottomLinks li {
   display: inline-block;
   width: auto;
   padding: 5px 15px;
 }
-#mmenu .m-footer .bottomLinks li a {
+#mobile-menu .m-footer .bottomLinks li a {
   font-size: 14px;
   font-weight: bold;
 }
-#mmenu a {
+#mobile-menu a {
   color: #fff;
 }
 

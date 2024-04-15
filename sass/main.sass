@@ -6,7 +6,7 @@
 @import "../libs/owlcarousel/owl.carousel.min.css"
 @import "../libs/owlcarousel/owl.theme.default.min.css"
 @import "../libs/animate/animate"
-@import "../libs/mmenu/mmenu.css"
+@import "../libs/mmenu/jquery.mmenu.css"
 
 .container
 	padding-left: 0
@@ -336,6 +336,20 @@ body textarea:required:valid
 .fadeInUp
 	-webkit-animation-name: fadeInUp
 	animation-name: fadeInUp
+
+// mmenu2
+.mm-panels > .mm-panel
+	background-color: rgba(#000, 1)
+	a
+		color: #fff
+		// font-size: 24px
+		padding: 25px 15px
+.mm-listview > li:not(.mm-divider):after
+	border-color: #eee
+.mm-menu .mm-listview > li .mm-next:after, .mm-menu .mm-listview > li .mm-arrow:after
+	border-color: rgba(#fff, .6)
+html.mm-opening .mm-slideout
+	overflow: hidden
 
 //ALWAYS END
 @import "media"

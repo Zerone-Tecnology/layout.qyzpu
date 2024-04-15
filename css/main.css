@@ -1,7 +1,7 @@
 @import "../libs/css/bootstrap-grid.min.css";
 @import "../libs/owlcarousel/owl.carousel.min.css";
 @import "../libs/owlcarousel/owl.theme.default.min.css";
-@import "../libs/mmenu/mmenu.css";
+@import "../libs/mmenu/jquery.mmenu.css";
 @font-face {
   font-family: "Gilroy";
   src: url("../fonts/GilroyRegular/GilroyRegular.woff2") format("woff2"), url("../fonts/GilroyRegular/GilroyRegular.woff") format("woff");
@@ -3405,6 +3405,26 @@ body textarea:required:valid {
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
+}
+
+.mm-panels > .mm-panel {
+  background-color: black;
+}
+.mm-panels > .mm-panel a {
+  color: #fff;
+  padding: 25px 15px;
+}
+
+.mm-listview > li:not(.mm-divider):after {
+  border-color: #eee;
+}
+
+.mm-menu .mm-listview > li .mm-next:after, .mm-menu .mm-listview > li .mm-arrow:after {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+html.mm-opening .mm-slideout {
+  overflow: hidden;
 }
 
 /*==========  Desktop First Method  ==========*/
