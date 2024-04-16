@@ -3427,10 +3427,6 @@ body textarea:required:valid {
   border-color: rgba(255, 255, 255, 0.6);
 }
 
-html.mm-opening .mm-slideout {
-  overflow: hidden;
-}
-
 /*==========  Desktop First Method  ==========*/
 @media only screen and (max-width: 1440px) {
   .header .col-right {

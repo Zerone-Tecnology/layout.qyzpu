@@ -526,6 +526,9 @@
   .footer .bottomMainMenu ul li {
     width: 100%;
   }
+  .top-menu-wrap {
+    display: none;
+  }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
