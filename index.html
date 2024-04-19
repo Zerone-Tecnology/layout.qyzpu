@@ -33,18 +33,21 @@
 	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css" );</script>
 	<script>loadCSS( "css/header.min.css", false, "all" );</script>
 	<script>loadCSS( "css/main.min.css", false, "all" );</script>
+	<script>loadCSS( "css/user.min.css", false, "all" );</script>
 	<!-- Load CSS End -->
 
 	<!-- Load CSS Compiled without JS -->
 	<noscript>
 		<link rel="stylesheet" href="css/fonts.min.css">
 		<link rel="stylesheet" href="css/main.min.css">
+		<link rel="stylesheet" href="css/user.min.css">
 	</noscript>
 
 </head>
 
 <body>
 	<!-- mega menu -->
+	<div id="mmenu2"></div>
 	<div id="mobile-menu">
 		<div class="menuLogo">
 			<img src="img/logo-80-white.png" width="50px" alt="Logo">
@@ -206,7 +209,9 @@
 						</ul>
 					</div>
 					<div class="search-wrap">
-						<img src="img/eye.svg" alt="Версия для слабовидящих">
+						<a href="#" class="bvi-open" title="Версия сайта для слабовидящих">
+							<img src="img/eye.svg" alt="Версия для слабовидящих">
+						</a>
 					</div>
 					<div class="search-wrap">
 						<img src="img/search.svg" alt="Search">
@@ -236,9 +241,9 @@
 					</div>
 					<div class="video-background">
 						<div class="video-foreground">
-							<video loop="" muted="" playsinline="" autoplay="autoplay" class="video-inline__video" data-fitvid="56.25" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;">
+							<!-- <video loop="" muted="" playsinline="" autoplay="autoplay" class="video-inline__video" data-fitvid="56.25" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;">
 								<source src="img/video-bg-2.mp4" type="video/mp4">
-							</video>
+							</video> -->
 							<!-- <iframe src="https://www.youtube.com/embed/o34jaoD8r_E?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=o34jaoD8r_E" frameborder="0" allowfullscreen></iframe> -->
 						</div>
 					</div>

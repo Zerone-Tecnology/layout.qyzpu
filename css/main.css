@@ -2,6 +2,7 @@
 @import "../libs/owlcarousel/owl.carousel.min.css";
 @import "../libs/owlcarousel/owl.theme.default.min.css";
 @import "../libs/mmenu/jquery.mmenu.css";
+@import "../libs/bvi/bvi.min.css";
 @font-face {
   font-family: "Gilroy";
   src: url("../fonts/GilroyRegular/GilroyRegular.woff2") format("woff2"), url("../fonts/GilroyRegular/GilroyRegular.woff") format("woff");

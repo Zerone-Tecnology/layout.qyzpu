@@ -66,13 +66,14 @@ a
 .img
 	width: 100%
 .header
-	background: rgb(0,0,0,.5)
+	// background: rgb(0,0,0,.5)
+	position: absolute
 	color: #fff
 	padding: 15px 0
 	font-size: 14px
 	font-weight: 300
-	height: 100%
-	position: relative
+	width: 100%
+	z-index: 2
 	.search-wrap
 		position: relative
 		background-color: $accent
@@ -148,7 +149,7 @@ a
 	// background-image: url('../img/bg-header.jpg')
 	background-repeat: no-repeat
 	background-size: cover
-	min-height: 70vh
+	min-height: 95vh
 	position: relative
 	overflow: hidden
 	&::after
@@ -168,7 +169,7 @@ a
 		left: 0
 		right: 0
 		margin: 0 auto
-		top: 25%
+		top: 40%
 		text-align: center
 		color: #fff
 		text-shadow: 0 0 4px #000
@@ -181,18 +182,19 @@ a
 	width: 100%
 	bottom: 45px
 	text-align: center
+	z-index: 2
 *
 	box-sizing: border-box
 
 .video-background
 	background-image: url('../img/head-bg.jpg')
 	background-size: cover
-	position: fixed
+	position: absolute
 	top: 0
 	right: 0
 	bottom: 0
 	left: 0
-	z-index: -99
+	z-index: -9
 
 .video-foreground, .video-background iframe
 	position: absolute

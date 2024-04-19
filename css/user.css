@@ -40,6 +40,7 @@
 .header.page {
   background-color: #287878;
   padding: 0;
+  z-index: 3;
 }
 .header.page .search-wrap {
   background-color: #303030;
