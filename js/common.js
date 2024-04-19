@@ -15,12 +15,12 @@ $(function() {
 		"bvi_hide" : false // Скрывает панель для слабовидящих и показывает иконку панели.
 	});
 	
-	// $('#mobile-menu .m-wrap').clone().appendTo('#mmenu2');	
-	// $('#mmenu2').mmenu({
-	// 	navbar: {
-	// 		title: 'Главное меню'
-	// 	}
-	// });
+	$('#mobile-menu .m-wrap').clone().appendTo('#mmenu2');	
+	$('#mmenu2').mmenu({
+		navbar: {
+			title: 'Главное меню'
+		}
+	});
 
 	// new WOW().init();
 
@@ -40,22 +40,6 @@ $(function() {
 		$('.admis-popup').removeClass('active');
 	})
 
-	let tabs = document.querySelector(".tabs-wrap");
-	let tabHeader = tabs.querySelector(".tab-header");
-	let tabHeaderElements = tabs.querySelectorAll(".tab-header > div");
-	let tabBody = tabs.querySelector(".tab-body");
-	let tabBodyElements = tabs.querySelectorAll(".tab-body > div");
-	let tabIndicator = tabs.querySelector(".tab-indicator > div");
-
-	for(let i=0; i<tabHeaderElements.length; i++){
-		tabHeaderElements[i].addEventListener("click", function(){
-			tabHeader.querySelector(".active").classList.remove("active");
-			tabHeaderElements[i].classList.add("active");
-			tabBody.querySelector(".active").classList.remove("active");
-			tabBodyElements[i].classList.add("active");
-			tabIndicator.style.left = `${i*25}%`;
-		});
-	}
 
 	// $('.slider').owlCarousel({
 	// 	items: 1,
@@ -69,24 +53,7 @@ $(function() {
 	// 	});
 	// };
 
-	//E-mail Ajax Send
-	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Thank you!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
-
+	
 	$('.mmenu').on('click', function(){
 		$('#mobile-menu').toggleClass('active');		
     $('body').toggleClass('fixed');
