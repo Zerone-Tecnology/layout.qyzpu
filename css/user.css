@@ -372,6 +372,106 @@
   padding: 15px;
 }
 
+.institute-head {
+  min-height: 70vh;
+  background-size: cover;
+  position: relative;
+}
+.institute-head::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.institute-head .i-title {
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  color: #fff;
+  font-size: 65px;
+  line-height: 1.2em;
+  z-index: 3;
+}
+.institute-staff .blocks-wrap {
+  display: flex;
+  flex-direction: row;
+}
+.institute-staff .blocks-wrap .block {
+  width: 33%;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.institute-staff .blocks-wrap .block::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: linear-gradient(0deg, #0e0e0e 0%, transparent 100%);
+}
+.institute-staff .blocks-wrap .block:hover .img-wrap {
+  background-size: 105%;
+}
+.institute-staff .blocks-wrap .block:hover .content {
+  height: 100px;
+}
+.institute-staff .blocks-wrap .block .b-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.1em;
+}
+.institute-staff .blocks-wrap .block .img-wrap {
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+  background-position: 50% 50%;
+  transition: all 0.25s ease-in-out;
+}
+.institute-staff .blocks-wrap .block .content {
+  z-index: 3;
+  color: #fff;
+  position: absolute;
+  bottom: 50px;
+  height: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 1.1em;
+}
+.institute-staff .blocks-wrap .block .content a {
+  color: #fff;
+}
+.institute-staff .blocks-wrap .block .btn-more-link {
+  position: absolute;
+  bottom: 10px;
+  z-index: 3;
+  color: #fff;
+  left: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 16px;
+  width: 90%;
+}
+.institute-staff .blocks-wrap .block .icon-arr-white {
+  height: 30px;
+  width: 30px;
+  background-image: url("../img/icon/arr-more-white.svg");
+  background-size: cover;
+  margin-left: 15px;
+}
+
 .counts {
   text-align: center;
 }
