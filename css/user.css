@@ -517,8 +517,11 @@
   color: #fff;
   height: 0;
   padding-bottom: 33%;
-  background-size: cover;
+  background-size: 100%;
   position: relative;
+  overflow: hidden;
+  background-position: 50%;
+  transition: all 0.25s ease-in-out;
 }
 .institute-departments .blocks-wrap .block::after {
   content: "";
@@ -529,6 +532,9 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
 }
+.institute-departments .blocks-wrap .block:hover {
+  background-size: 105%;
+}
 .institute-departments .blocks-wrap .block .b-title {
   text-align: center;
   font-size: 20px;
@@ -537,14 +543,14 @@
   z-index: 5;
   position: relative;
 }
-.institute-departments .blocks-wrap .block .b-title a {
+.institute-departments .blocks-wrap .block a {
   color: #fff;
   transition: background-size 0.3s;
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 0 1px;
 }
-.institute-departments .blocks-wrap .block .b-title:hover a {
+.institute-departments .blocks-wrap .block a:hover {
   background-image: linear-gradient(currentColor, currentColor);
   text-decoration: none;
   background-size: 100% 1px;
