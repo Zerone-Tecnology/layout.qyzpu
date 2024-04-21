@@ -657,6 +657,12 @@
   .admission-usefull .blocks-wrap .block {
     width: 50%;
   }
+  .institute-staff .blocks-wrap {
+    flex-wrap: wrap;
+  }
+  .institute-staff .blocks-wrap .block {
+    width: 45%;
+  }
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -708,6 +714,16 @@
   .program-head .p-title {
     margin: 25px 0;
   }
+  .institute-staff .blocks-wrap .block {
+    width: 100%;
+  }
+  .institute-staff .blocks-wrap .block .img-wrap {
+    min-height: 500px;
+  }
+  .institute-departments .blocks-wrap .block {
+    width: 48%;
+    padding-bottom: 48%;
+  }
   .footer .bottomMainMenu ul li {
     width: 100%;
   }
@@ -722,6 +738,10 @@
   }
   .admission-info .programm-list {
     width: 100%;
+  }
+  .institute-departments .blocks-wrap .block {
+    width: 100%;
+    padding-bottom: 100%;
   }
 }
 /* Custom, iPhone Retina *//*# sourceMappingURL=user.css.map */
