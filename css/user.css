@@ -56,7 +56,8 @@
 
 .bradcrumbs {
   vertical-align: middle;
-  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
 }
@@ -374,14 +375,14 @@
 }
 
 .institute-head {
-  min-height: 70vh;
+  min-height: 95vh;
   background-size: cover;
   position: relative;
 }
 .institute-head::after {
   content: "";
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   top: 0;
   left: 0;
   width: 100%;
@@ -391,6 +392,8 @@
 .institute-head .i-title {
   position: absolute;
   top: 40%;
+  right: 0;
+  left: 0;
   text-align: center;
   width: 70%;
   margin: auto;
@@ -585,6 +588,25 @@
   font-size: 12px;
   color: #828282;
 }
+.contacts .phone {
+  display: block;
+  float: left;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.contacts .phone a {
+  display: block;
+  float: left;
+  width: 200px;
+}
+.contacts .phone div {
+  float: right;
+  width: calc(100% - 200px);
+}
+.contacts .phone .name {
+  font-size: 16px;
+  font-weight: 700;
+}
 
 .footer {
   background-color: #303030;
@@ -666,6 +688,11 @@
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .institute-head .i-title {
+    top: 40%;
+    width: 90%;
+    font-size: 55px;
+  }
   .section.sec-2 .block-wrap .block {
     width: 50%;
   }
@@ -739,9 +766,18 @@
   .admission-info .programm-list {
     width: 100%;
   }
+  .institute-head .i-title {
+    font-size: 45px;
+  }
   .institute-departments .blocks-wrap .block {
     width: 100%;
     padding-bottom: 100%;
+  }
+  .contacts .contact-wrap .phone a {
+    width: 100%;
+  }
+  .contacts .contact-wrap .phone div {
+    width: 100%;
   }
 }
 /* Custom, iPhone Retina *//*# sourceMappingURL=user.css.map */

@@ -3495,41 +3495,38 @@ body textarea:required:valid {
   .header .logo {
     margin-top: 0;
   }
-  .top-slider {
-    min-height: 300px;
-  }
   .top-slider .content {
     width: 90%;
-    top: 15%;
   }
-  #mmenu {
+  #mobile-menu {
     overflow-x: scroll;
     padding-bottom: 100px;
   }
-  #mmenu .menuLogo {
+  #mobile-menu .menuLogo {
     padding-left: 15px;
   }
-  #mmenu ul li {
+  #mobile-menu .m-wrap ul li {
     display: block;
     width: 100%;
   }
-  #mmenu ul li ul {
+  #mobile-menu .m-wrap ul li ul {
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
+    margin-bottom: 0;
   }
-  #mmenu ul li ul li {
+  #mobile-menu .m-wrap ul li ul li {
     width: 100%;
     padding: 15px;
   }
-  #mmenu .bottomLinks {
+  #mobile-menu .bottomLinks {
     overflow: auto;
     display: flex;
     align-items: center;
     white-space: nowrap;
   }
-  #mmenu .bottomLinks li {
+  #mobile-menu .bottomLinks li {
     display: inline-block;
     padding: 5px 15px;
   }

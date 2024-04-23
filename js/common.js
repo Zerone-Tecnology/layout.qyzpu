@@ -22,6 +22,15 @@ $(function() {
 		}
 	});
 
+	$('.btnSearch').on('click', function(){
+		$('.searchContent').toggleClass('active');
+	})
+
+	$(document).click(function (e) {
+		if (!$(event.target).closest(".searchContent,.btnSearch").length) {
+			$("body").find(".searchContent").removeClass("active");
+		}
+	});
 	// new WOW().init();
 
 	var allPanels = $('.accordion-wrap > .p-content').hide();
@@ -40,7 +49,6 @@ $(function() {
 		$('.admis-popup').removeClass('active');
 	})
 
-
 	// $('.slider').owlCarousel({
 	// 	items: 1,
 	// 	nav: true
@@ -53,7 +61,6 @@ $(function() {
 	// 	});
 	// };
 
-	
 	$('.mmenu').on('click', function(){
 		$('#mobile-menu').toggleClass('active');		
     $('body').toggleClass('fixed');
@@ -63,14 +70,14 @@ $(function() {
 
 	$('#mobile-menu li a').on('click', function(){
 		$('#mobile-menu ul ul').removeClass('active');
-		$(this).parent().find('ul').addClass('active');
+		$(this).parent().find('ul').toggleClass('active');
 		burMenuBg = $(this).parent().data('bg-img');
 		if(burMenuBg){
 			$("#mobile-menu").css("background-image", "url(img/"+burMenuBg+")");
 		} else {
 			$("#mobile-menu").css("background", "#000");
 		}
-		// console.log('bg: '+burMenuBg);
+		$('#mobile-menu').animate({scrollTop: 100}, 500);
 	})
 
 });
