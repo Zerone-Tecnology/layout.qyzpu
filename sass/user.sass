@@ -192,6 +192,7 @@
 	.programm-list
 		background-image: url('../img/bg-bachelor-list.jpg')
 		background-size: cover
+		background-position: center
 		width: 80%
 		margin: 55px auto
 		> li
@@ -266,8 +267,9 @@
 		&:hover
 			background-color: darken($accent, 10%)
 	.img-wrap
+		text-align: center
 		img
-			width: 100%
+			max-height: 320px
 
 .program-info
 
@@ -460,6 +462,74 @@
 						text-decoration: none
 						background-size: 100% 1px
 						
+.students-head
+
+	.s-wrap
+		border-top: 2px solid $accent
+		border-bottom: 2px solid $accent
+		padding: 50px 0
+
+.students-source
+	margin-top: 0!important
+	margin-bottom: 55px
+
+	.title
+		border-bottom: 4px solid $accent
+		margin-bottom: 45px
+		padding-bottom: 25px
+	
+	.block-wrap
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: flex-start
+
+		.block
+			width: 33%
+			a
+				display: block
+				padding: 15px 0
+				text-decoration: underline
+
+.student-clubs
+
+	.block-wrap
+
+		.block
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			border-radius: 15px
+			border: 1px solid rgba($accent, 0.15)
+			box-shadow: 0 7px 0 rgba($accent, 0.15)
+			padding: 37px
+			margin-bottom: 25px
+
+			.b-title
+				font-weight: 700
+				margin-bottom: 15px
+
+			.img-wrap
+				width: 30%
+				margin-right: 67px
+				height: 250px
+				overflow: hidden
+				border-radius: 15px
+				display: flex
+				align-items: center
+				
+				img
+					width: 100%
+
+			.content
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+			
+			.social
+				margin-top: 15px
+				span
+					font-weight: 700
 
 
 .counts
@@ -560,16 +630,36 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+	
 	.admission-usefull 
 		.blocks-wrap 
 			flex-wrap: wrap
 			.block
 				width: 50%
+
 	.institute-staff 
 		.blocks-wrap
 			flex-wrap: wrap
 			.block
 				width: 45%
+	
+	.students-source 
+		.block-wrap 
+			.block
+				width: 50%
+
+	.student-clubs .block-wrap 
+		.block 
+			flex-wrap: wrap
+			padding: 27px
+
+			.b-title
+				margin-top: 15px
+				
+			.img-wrap
+				width: 100%
+				margin-right: 0
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -669,6 +759,11 @@
 					width: 100%
 				div
 					width: 100%
+
+	.students-source 
+		.block-wrap 
+			.block
+				width: 100%
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

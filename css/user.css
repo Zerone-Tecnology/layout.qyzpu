@@ -261,6 +261,7 @@
 .admission-info .programm-list {
   background-image: url("../img/bg-bachelor-list.jpg");
   background-size: cover;
+  background-position: center;
   width: 80%;
   margin: 55px auto;
 }
@@ -346,8 +347,11 @@
 .program-head .btn-color-link:hover {
   background-color: #1b5252;
 }
+.program-head .img-wrap {
+  text-align: center;
+}
 .program-head .img-wrap img {
-  width: 100%;
+  max-height: 320px;
 }
 
 .program-faq .accordion-wrap {
@@ -559,6 +563,74 @@
   background-size: 100% 1px;
 }
 
+.students-head .s-wrap {
+  border-top: 2px solid #287878;
+  border-bottom: 2px solid #287878;
+  padding: 50px 0;
+}
+
+.students-source {
+  margin-top: 0 !important;
+  margin-bottom: 55px;
+}
+.students-source .title {
+  border-bottom: 4px solid #287878;
+  margin-bottom: 45px;
+  padding-bottom: 25px;
+}
+.students-source .block-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.students-source .block-wrap .block {
+  width: 33%;
+}
+.students-source .block-wrap .block a {
+  display: block;
+  padding: 15px 0;
+  text-decoration: underline;
+}
+
+.student-clubs .block-wrap .block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 15px;
+  border: 1px solid rgba(40, 120, 120, 0.15);
+  box-shadow: 0 7px 0 rgba(40, 120, 120, 0.15);
+  padding: 37px;
+  margin-bottom: 25px;
+}
+.student-clubs .block-wrap .block .b-title {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.student-clubs .block-wrap .block .img-wrap {
+  width: 30%;
+  margin-right: 67px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+.student-clubs .block-wrap .block .img-wrap img {
+  width: 100%;
+}
+.student-clubs .block-wrap .block .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.student-clubs .block-wrap .block .social {
+  margin-top: 15px;
+}
+.student-clubs .block-wrap .block .social span {
+  font-weight: 700;
+}
+
 .counts {
   text-align: center;
 }
@@ -685,6 +757,20 @@
   .institute-staff .blocks-wrap .block {
     width: 45%;
   }
+  .students-source .block-wrap .block {
+    width: 50%;
+  }
+  .student-clubs .block-wrap .block {
+    flex-wrap: wrap;
+    padding: 27px;
+  }
+  .student-clubs .block-wrap .block .b-title {
+    margin-top: 15px;
+  }
+  .student-clubs .block-wrap .block .img-wrap {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -777,6 +863,9 @@
     width: 100%;
   }
   .contacts .contact-wrap .phone div {
+    width: 100%;
+  }
+  .students-source .block-wrap .block {
     width: 100%;
   }
 }
