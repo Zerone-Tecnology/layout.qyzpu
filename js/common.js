@@ -1,5 +1,9 @@
 $(function() {
 
+	// let table = new DataTable('.qTable',{
+	// 	scrollX: true
+	// });
+
 	$.bvi({
 		'bvi_target' : '.bvi-open', // Класс ссылки включения плагина
 		"bvi_theme" : "white", // Цвет сайта

@@ -12,6 +12,12 @@
 		background-color: $gray
 	.mainMenu #menuToggle
 		background-color: $gray
+.btn-link
+	display: block
+	background-image: url('../img/arr-b.svg')
+	background-size: cover
+	width: 30px
+	height: 30px
 
 .page
 	.section
@@ -270,6 +276,7 @@
 		text-align: center
 		img
 			max-height: 320px
+			width: 100%
 
 .program-info
 
@@ -531,6 +538,38 @@
 				span
 					font-weight: 700
 
+.department-list
+	.block-wrap
+		display: flex
+		flex-wrap: wrap
+		gap: 15px
+
+		.block
+			border: 2px solid $accent
+			padding: 25px 15px 40px
+			width: calc(33% - 15px)
+			font-weight: 700
+			position: relative
+
+			.btn-link
+				position: absolute
+				right: 15px
+				bottom: 15px
+
+.programm
+	table, .qTable
+		border-collapse: collapse
+
+		thead tr
+			background-color: $accent
+			color: #fff
+		td
+			padding: 12px 15px
+		tr
+			border-bottom: 1px solid #ddd
+			&:nth-of-type(even)
+				background-color: #f3f3f3
+
 
 .counts
 	text-align: center
@@ -655,7 +694,7 @@
 
 			.b-title
 				margin-top: 15px
-				
+
 			.img-wrap
 				width: 100%
 				margin-right: 0

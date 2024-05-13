@@ -50,6 +50,14 @@
   background-color: #303030;
 }
 
+.btn-link {
+  display: block;
+  background-image: url("../img/arr-b.svg");
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
 .page .section {
   margin-top: 55px;
 }
@@ -352,6 +360,7 @@
 }
 .program-head .img-wrap img {
   max-height: 320px;
+  width: 100%;
 }
 
 .program-faq .accordion-wrap {
@@ -629,6 +638,41 @@
 }
 .student-clubs .block-wrap .block .social span {
   font-weight: 700;
+}
+
+.department-list .block-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.department-list .block-wrap .block {
+  border: 2px solid #287878;
+  padding: 25px 15px 40px;
+  width: calc(33% - 15px);
+  font-weight: 700;
+  position: relative;
+}
+.department-list .block-wrap .block .btn-link {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+
+.programm table, .programm .qTable {
+  border-collapse: collapse;
+}
+.programm table thead tr, .programm .qTable thead tr {
+  background-color: #287878;
+  color: #fff;
+}
+.programm table td, .programm .qTable td {
+  padding: 12px 15px;
+}
+.programm table tr, .programm .qTable tr {
+  border-bottom: 1px solid #ddd;
+}
+.programm table tr:nth-of-type(even), .programm .qTable tr:nth-of-type(even) {
+  background-color: #f3f3f3;
 }
 
 .counts {
