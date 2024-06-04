@@ -3214,16 +3214,49 @@ body textarea:required:valid {
   border-left: 4px solid #287878;
   padding-left: 15px;
 }
-.section.sec-3 .blocks {
-  display: flex;
-  gap: 50px;
-}
 .section.sec-3 .blocks .block {
-  background-color: #fff;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 55px 0;
 }
-.section.sec-3 .blocks .block img {
+.section.sec-3 .blocks .block::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 40%;
+  width: 50%;
+  height: 100%;
+  display: block;
+  background-color: #fff;
+}
+.section.sec-3 .blocks .block .img-wrap {
+  max-width: 550px;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(50px);
+}
+.section.sec-3 .blocks .block .img-wrap img {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.section.sec-3 .blocks .block .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 5;
+  transition: all 0.9s ease-in-out;
+  transform: translateX(50px);
+}
+.section.sec-3 .blocks .active .img-wrap {
+  transform: translateX(0);
+}
+.section.sec-3 .blocks .active .content {
+  transform: translateX(0);
 }
 .section.sec-3 .name {
   padding: 15px;

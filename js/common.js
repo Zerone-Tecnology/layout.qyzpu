@@ -4,6 +4,12 @@ $(function() {
 	// 	scrollX: true
 	// });
 
+	$('.block-slider').owlCarousel({
+		items: 1,
+		nav: false,
+		dots: false
+	})
+
 	$.bvi({
 		'bvi_target' : '.bvi-open', // Класс ссылки включения плагина
 		"bvi_theme" : "white", // Цвет сайта
