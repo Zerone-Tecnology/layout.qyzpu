@@ -900,6 +900,16 @@
   color: #287878;
 }
 
+.page-404 {
+  height: 100vh;
+}
+.page-404 .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
 .not-found {
   text-align: center;
 }

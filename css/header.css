@@ -278,8 +278,6 @@ a:hover {
 }
 
 .video-background {
-  background-image: url("../img/head-bg.jpg");
-  background-size: cover;
   position: absolute;
   top: 0;
   right: 0;

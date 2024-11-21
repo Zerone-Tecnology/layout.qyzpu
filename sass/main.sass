@@ -134,16 +134,13 @@ body textarea:required:valid
 					position: absolute
 					right: 15px
 					bottom: 15px
-				.img
-					position: absolute
-					top: 0
-					left: 0
 				.bg-prog
 					position: absolute
 					left: 0
 					top: 0
 					width: 100%
-					opacity: 0.1
+					&.h-text
+						opacity: 0.1
 				&:nth-child(1), &:nth-child(6)
 					background-color: #272A2D
 					color: #fff
@@ -163,6 +160,7 @@ body textarea:required:valid
 					width: 50%
 				&:nth-child(3)
 					transform: scale(1)
+					background-color: $accent
 				&:nth-child(4)
 					background-color: $accent
 					color: #fff
@@ -176,6 +174,7 @@ body textarea:required:valid
 							background-color: #fff
 							&::after, &::before
 								background-color: #fff
+				
 	// why qyzpu
 	&.sec-3
 		padding: 45px 0
@@ -189,19 +188,10 @@ body textarea:required:valid
 				// background-color: #fff
 				position: relative
 				display: flex
-				flex-direction: row
+				flex-direction: column
 				padding: 55px 0
-				&::after
-					content: ''
-					position: absolute
-					top: 0
-					left: 40%
-					width: 50%
-					height: 100%
-					display: block
-					background-color: #fff
 				.img-wrap
-					max-width: 550px
+					width: 100%
 					overflow: hidden
 					position: relative
 					z-index: 5
@@ -213,17 +203,21 @@ body textarea:required:valid
 						object-fit: contain
 				.content
 					display: flex
+					background-color: #fff
 					flex-direction: column
 					justify-content: space-between
 					position: relative
 					z-index: 5
 					transition: all .9s ease-in-out
 					transform: translateX(50px)
+					opacity: 0
 			.active
+				width: 20%
 				.img-wrap
 					transform: translateX(0)
 				.content
 					transform: translateX(0)
+					opacity: 1
 		.name
 			padding: 15px
 			font-size: 20px
@@ -237,6 +231,21 @@ body textarea:required:valid
 			justify-content: end
 			.arr-bg
 				margin-left: 15px
+		.owl-nav
+			.owl-prev,.owl-next
+				height: 50px
+				width: 50px
+				border-radius: 50%
+				background-image: url('../img/arr-b-2.svg')
+				background-repeat: no-repeat
+				background-position: center
+				background-color: transparent
+				border: 1px solid #000
+				&:hover
+					background-color: $accent
+			.owl-prev
+				transform: rotate(180deg)
+
 	// news
 	&.sec-4
 		.btn-more-link
@@ -352,6 +361,75 @@ body textarea:required:valid
 					margin-right: 15px
 					img 
 						width: 100%
+
+// aqtumar
+.aqtumar
+	.s-title
+		font-size: 30px
+		margin-bottom: 40px
+		
+	.about
+		background-color: #EFEFEF
+		margin-top: 0!important
+		padding: 55px 0
+		.s-title
+
+	.goals
+		.block-wrap
+			background-color: #DBF6E6
+			padding: 15px
+
+	.parts
+		.block-wrap
+			.block
+				background-color: #272A2D
+				color: #fff
+				width: 50%
+				display: flex
+				.bg-prog
+					width: 50%
+					position: relative
+				.b-content
+					width: 50%
+					justify-content: center
+					h4
+						font-size: 20px
+						font-weight: normal
+						text-align: center
+					a
+						position: relative
+						padding: 0
+						color: #fff
+	.info
+		.block-wrap
+			background-color: #F4DBA5
+			padding: 15px
+
+	.parts-cout
+		.block-wrap
+			display: flex
+			justify-content: space-around
+			.block
+				width: 32%
+				border: 3px solid $accent
+				text-align: center
+				.b-title
+					font-size: 30px
+
+	.worktime
+		.block-wrap
+			.block
+				width: 30%
+				border-top: 2px solid #D6D6D6
+				padding-top: 15px
+				font-size: 18px
+				.b-title
+					font-size: 16px
+				p
+					margin: 0
+					padding-left: 25px
+
+
 
 @keyframes fadeInUp
 	0%

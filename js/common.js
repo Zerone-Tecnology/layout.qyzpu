@@ -5,9 +5,11 @@ $(function() {
 	// });
 
 	$('.block-slider').owlCarousel({
-		items: 1,
-		nav: false,
-		dots: false
+		items: 2,
+		nav: true,
+		navText: false,
+		dots: false,
+		margin: 20
 	})
 
 	$.bvi({
