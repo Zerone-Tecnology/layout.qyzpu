@@ -1702,16 +1702,16 @@ body textarea:required:valid {
   background-color: #F4DBA5;
   padding: 15px;
 }
-.aqtumar .parts-cout .block-wrap {
+.aqtumar .partscount .block-wrap {
   display: flex;
   justify-content: space-around;
 }
-.aqtumar .parts-cout .block-wrap .block {
+.aqtumar .partscount .block-wrap .block {
   width: 32%;
   border: 3px solid #287878;
   text-align: center;
 }
-.aqtumar .parts-cout .block-wrap .block .b-title {
+.aqtumar .partscount .block-wrap .block .b-title {
   font-size: 30px;
 }
 .aqtumar .worktime .block-wrap .block {
@@ -1796,6 +1796,23 @@ body textarea:required:valid {
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .aqtumar .sec-2.parts .block-wrap .block {
+    width: 100%;
+  }
+  .aqtumar .sec-2.parts .block-wrap .block:last-child {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .aqtumar .partscount .block-wrap {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .aqtumar .partscount .block-wrap .block {
+    width: 100%;
+  }
+  .aqtumar .worktime .block-wrap .block {
+    width: 100%;
+  }
   /*Disable Animation on Mobile Devices*/
   .animated {
     /*CSS transitions*/
