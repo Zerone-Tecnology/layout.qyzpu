@@ -1672,6 +1672,9 @@ body textarea:required:valid {
   width: 50%;
   display: flex;
 }
+.aqtumar .parts .block-wrap .block:nth-child(4) {
+  background-color: #272A2D;
+}
 .aqtumar .parts .block-wrap .block .bg-prog {
   width: 50%;
   position: relative;
@@ -1689,6 +1692,11 @@ body textarea:required:valid {
   position: relative;
   padding: 0;
   color: #fff;
+}
+.aqtumar .parts .block-wrap .block .b-content.large {
+  width: 100%;
+  position: absolute;
+  background-color: rgba(40, 120, 120, 0.9);
 }
 .aqtumar .info .block-wrap {
   background-color: #F4DBA5;
