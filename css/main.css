@@ -1728,6 +1728,60 @@ body textarea:required:valid {
   padding-left: 25px;
 }
 
+.practice .s-title {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+.practice .list .block-wrap .block {
+  display: flex;
+  margin-bottom: 55px;
+}
+.practice .list .block-wrap .block .num {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #ccc;
+  text-align: center;
+  font-size: 30px;
+  margin-right: 25px;
+}
+.practice .list .block-wrap .block .content {
+  width: 60%;
+}
+.practice .list .block-wrap .block .content .b-title {
+  font-weight: bold;
+}
+.practice .list .block-wrap .block .content ul {
+  border-left: 4px solid #287878;
+  padding-left: 15px;
+}
+.practice .block-count {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.practice .block-count .item {
+  padding: 10px;
+}
+.practice .block-count .left {
+  background-color: #EFEFEF;
+}
+.practice .block-count .red {
+  background-color: #FFECEC;
+}
+.practice .block-count .green {
+  background-color: #EFFFEE;
+}
+.practice .block-count .name {
+  font-size: 16px;
+}
+.practice .block-count .text {
+  font-size: 28px;
+}
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;
