@@ -1735,12 +1735,25 @@ body textarea:required:valid {
 .practice .list .block-wrap .block {
   display: flex;
   margin-bottom: 55px;
+  position: relative;
+  padding-bottom: 25px;
+}
+.practice .list .block-wrap .block::after {
+  content: "";
+  width: 30%;
+  height: 1px;
+  background-color: #D6D6D6;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 .practice .list .block-wrap .block .num {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  box-shadow: 0 0 15px #ccc;
+  box-shadow: 0 0 15px rgba(40, 120, 120, 0.2);
   text-align: center;
   font-size: 30px;
   margin-right: 25px;
