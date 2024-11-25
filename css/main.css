@@ -1795,6 +1795,50 @@ body textarea:required:valid {
   font-size: 28px;
 }
 
+.handbook .s-title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.handbook .section.sec-2 .block-wrap .block {
+  background-color: #287878;
+  width: 50%;
+  display: flex;
+}
+.handbook .section.sec-2 .block-wrap .block .b-content {
+  width: 50%;
+  font-size: 22px;
+}
+.handbook .section.sec-2 .block-wrap .block .b-content h4 {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.handbook .section.sec-2 .block-wrap .block .b-content a {
+  position: relative;
+  padding: 0;
+  color: #fff;
+}
+.handbook .section.sec-2 .block-wrap .block img {
+  position: relative;
+  width: 50%;
+}
+.handbook .section.sec-2 .block-wrap .block.color {
+  background-color: #303030;
+  color: #fff;
+}
+.handbook .section.sec-2 .block-wrap .block.color .b-content {
+  width: 100%;
+}
+.handbook .section.sec-2 .block-wrap .block.large {
+  width: 100%;
+  height: auto;
+}
+.handbook .section.sec-2 .block-wrap .block.large .b-content {
+  width: 25%;
+}
+.handbook .section.sec-2 .block-wrap .block.large img {
+  width: 75%;
+}
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;
