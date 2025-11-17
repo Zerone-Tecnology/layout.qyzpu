@@ -1892,6 +1892,7 @@ body textarea:required:valid {
 }
 .ai-sana .slider-wrap .content .title {
   font-size: 54px;
+  font-family: "Philosopher", sans-serif;
 }
 .ai-sana .slider-wrap .content .desc {
   font-size: 22px;
