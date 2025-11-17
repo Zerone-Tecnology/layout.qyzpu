@@ -1873,6 +1873,59 @@ body textarea:required:valid {
   border-color: rgba(255, 255, 255, 0.6);
 }
 
+.ai-sana .slider-wrap {
+  height: 650px;
+  color: #fff;
+  background-size: cover;
+  margin-bottom: 55px;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.ai-sana .slider-wrap .content {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.ai-sana .slider-wrap .content .title {
+  font-size: 54px;
+}
+.ai-sana .slider-wrap .content .desc {
+  font-size: 22px;
+}
+.ai-sana .ai-agents {
+  padding: 55px 0;
+}
+.ai-sana .ai-agents .block-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.ai-sana .ai-agents .block-wrap .block {
+  width: calc(33.333% - 15px);
+  border: 4px solid #287878;
+  padding: 15px;
+  position: relative;
+  padding-top: 70px;
+}
+.ai-sana .ai-agents .block-wrap .block .b-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #287878;
+}
+.ai-sana .ai-agents .block-wrap .status {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #e7e419;
+  color: #000;
+  border-radius: 15em;
+  padding: 5px 25px;
+}
+
 /*==========  Desktop First Method  ==========*/
 @media only screen and (max-width: 1440px) {
   .header .col-right {

@@ -1,0 +1,481 @@
+$accent: #287878
+$blue:#93c0f3
+
+body
+  font-family: "Montserrat","Helvetica Neue",Helvetica,Arial, sans-serif
+
+ul
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+.header-wrap
+  margin: 10px 0
+  display: flex
+  justify-content: space-between
+
+.logo-wrap
+  display: flex
+  flex-direction: row
+  h1
+    margin: 15px 0
+    font-size: 22px
+    span
+      font-size: 16px
+      color: $accent
+  img
+    width: 60px
+    height: 60px
+    margin-right: 15px
+  
+.content-wrap
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  position: relative
+  svg
+      width: 100%
+      height: auto
+
+  .main-wrap
+    width: 80%
+    padding-left: 25px
+    
+  .map-wrap
+    display: none
+    width: 100%
+
+  .guk-wrap    
+    display: none
+    background-color: #fff
+    &.show
+      display: block
+
+  .uk-1-wrap
+    display: none
+    &.show
+      display: block
+
+.b-wrap
+  position: absolute
+  z-index: 5
+  // width: 80%
+  // margin-left: 20%
+  top: 0
+  left: 25px
+  svg
+    width: 100%
+    height: 100%
+
+.build-wrap
+  position: absolute
+  bottom: 11%
+  left: 26%
+  z-index: 5
+
+.rooms
+  cursor: pointer
+  .on, .active
+    fill: #93c0f3
+.bg-map
+  img
+    height: 100%
+
+.build
+  cursor: pointer
+  transition: all .5s ease-in-out
+  &:hover
+    fill: #93c0f3
+
+.floor-wrap
+  display: none
+  background-color: #f4f4f0
+  &.show
+    display: block
+  .f-title
+    font-size: 28px
+    font-weight: bold
+    color: $blue
+    text-transform: uppercase
+    padding: 5px 15px
+  
+.left-wrap
+  // width: 20%
+  border-radius: 15px
+  background-color: #fff
+  box-shadow: 0 0 15px #ddd
+  padding: 15px 0
+  position: relative
+
+  &.show
+    display: block
+  .category-ul
+    li
+      padding: 10px 15px
+      background-color:#f9f9f9
+      font-size: 16px
+      margin: 5px 0
+      cursor: pointer
+      .title
+        display: flex
+        justify-content: space-between
+        &:hover
+          color: $accent
+      span
+        border-radius: 5px
+        background-color: $blue
+        color: #fff
+        padding: 5px
+        font-size: 14px
+      ul
+        display: none
+      &.active 
+        .title
+          color: $accent
+        ul
+          display: flex
+  .list-ul
+    display: flex
+    list-style-type: none
+    flex-wrap: wrap
+    flex-direction: row
+    padding: 0
+    margin: 0
+    li
+      padding: 5px
+      font-size: 14px
+      border: 1px solid $blue
+      margin: 5px 5px 0 0
+      border-radius: 4px
+
+  li.on
+    background-color: $accent
+    border-radius: 5px
+    color: #fff
+
+.floor-ul
+  width: 100%
+  display: none
+  text-align: center
+  &.show
+    display: flex
+  li
+    color: #444
+    margin: 5px
+    width: 50px
+    text-align: center
+    cursor: pointer
+    font-size: 24px
+    display: inline-block
+
+    a
+      display: block
+      background-color: #eee
+      border-radius: 5px
+      padding: 10px
+      color: #000
+
+      &:hover
+        text-decoration: none
+        background-color: $blue
+
+    &.active a
+      background-color: $accent
+      color: #fff
+
+.btn-back
+  display: none
+  font-weight: bold
+  font-size: 18px
+  &.show
+    display: block
+
+.popup
+  position: absolute
+  // top: 20%
+  // left: 0
+  width: 280px
+  height: 200px
+  margin-top: -220px
+  // margin-left: -300px
+  background-color: #fff
+  box-shadow: 0 0 15px #ccc
+  padding: 15px
+  display: none
+  z-index: 100
+  border-radius: 5px
+
+  &.show
+    display: block
+
+  .close
+    position: absolute
+    top: -25px
+    right: -25px
+    cursor: pointer
+    width: 30px
+    height: 30px
+    text-align: center
+    background-color: #fff
+    border-radius: 50%
+    box-shadow: 0 5px 15px #ccc
+    display: flex
+    justify-content: center
+    align-items: center
+    font-weight: 700
+
+    &:hover
+      background-color: $accent
+      color: #fff
+
+  .popup-wrap
+    position: relative
+
+    &::after
+      content: ''
+      position: absolute
+      top: 185px
+      left: 0
+      width: 0
+      height: 0
+      border-top: 10px solid #fff
+      border-bottom: 10px solid transparent
+      border-right:10px solid transparent
+      border-left:10px solid transparent
+
+    .title
+      font-size: 20px
+      
+      div
+        border-radius: 3px
+        color: #444
+        display: block
+        padding-bottom: 10px
+
+        &.num
+          font-weight: 500
+          line-height: 1.2em
+        
+        &.tag
+          color: $accent
+          font-size: 18px
+
+    .content
+      font-size: 16px
+      p
+        margin: 0
+
+
+.point
+  position: relative
+  background: $accent
+  width: 25px
+  height: 25px
+  -webkit-backface-visibility: hidden
+  &::after
+    content: ''
+    position: absolute
+    background: $accent
+    margin-left: -12px
+    margin-top: -12px
+    width: 50px
+    height: 50px
+    display: block
+    border-radius: 50%
+    -webkit-backface-visibility: hidden
+
+.point:before
+    animation: wave-animate 3s infinite ease-out
+
+
+.point:after
+    opacity:0
+    animation: wave-animate 3s 1.5s infinite ease-out
+
+
+@keyframes wave-animate 
+  0% 
+    transform: scale(0)
+    opacity: 1
+    transform-origin: center
+  
+  100% 
+    transform: scale(1.5)
+    opacity: 0
+    transform-origin: center
+
+#enter-1.guk
+  top: 15.5rem
+  left: 49.5%
+
+#enter-2.guk
+  top: 86.5%
+  left: 50%
+
+#enter-1.uk
+  top: 24rem
+  left: 49.5%
+
+#enter-1.lib
+  top: 67%
+  left: 58%
+  
+
+.po
+  transform: translate(-50%, -50%)
+  border-radius: 50%
+  width: 15px
+  height: 15px
+  position: absolute
+  display: block
+  &:before, &:after 
+    content: ''
+    display: block
+    position: absolute
+    top: -15px
+    left: -15px
+    right: -15px
+    bottom: -15px
+    border: 2px solid #FF7474
+    border-radius: 50%
+    opacity: 0
+    background-visibility: hidden
+  &.active
+    &:before, &:after 
+      animation: animate 1.5s linear infinite
+    &:after 
+      animation-delay: 0.5s
+  a
+    display: block
+    width: 30px
+    height: 30px
+    position: absolute
+    z-index: 10
+
+@keyframes animate 
+  0% 
+    transform: scale(0.5)
+    opacity: 0 
+
+  50% 
+    opacity: 1  
+
+  100% 
+    transform: scale(1.2)
+    opacity: 0
+  
+.result-search-list
+  position: absolute
+  background: #fff
+  // padding: 10px
+  border-radius: 4px
+  box-shadow: 0 5px 15px #ddd
+  border: #ddd
+  z-index: 100
+  text-align: left
+
+  .result_item
+    padding: 10px 0
+    border-bottom: 1px solid #ddd
+    margin: 10px 0
+    &:last-child
+      border-bottom: none      
+    a
+      color: #444
+      padding: 5px 15px
+      span
+        font-size: 12px
+        color: #8b8484
+        padding-left: 10px
+
+.mobile-wrap
+  display: none
+  .icon
+    width: 28px
+    img
+      width: 100%
+
+.search-wrap
+  display: flex
+  flex-direction: row
+  align-items: center
+  
+  .search
+    flex: 2
+
+    input[type="text"]
+      border: 1px solid #ff6900
+      padding: 10px
+
+  .mobile-wrap
+    flex: 0
+
+.contact-wrap
+  &.mobile
+    display: none
+
+@media only screen and (max-width : 768px)
+  .header-wrap
+    flex-wrap: wrap
+
+    .logo-wrap
+      width: 50%
+      margin-bottom: 10px
+      order: 1
+
+    .search-wrap
+      width: 100%
+      order: 3
+      text-align: center
+      input[type="text"]
+        width: 90%
+
+    .contact-wrap
+      width: 50%
+      order: 2
+      text-align: right
+
+  .mobile-wrap
+    display: block
+
+  .left-wrap
+    display: none
+    position: absolute
+    width: 90%
+    z-index: 10
+  .contact-wrap
+    &.desktop
+      display: none
+    &.mobile
+      display: block
+      text-align: center
+  .popup
+    width: 150px
+    top: 25%
+    .popup-wrap
+      // overflow-y: scroll
+      // height: 170px
+      .title
+        font-size: 15px
+        div.tag
+          font-size: 14px
+        div
+          padding-bottom: 5px
+      .content
+        font-size: 12px
+      &::after
+        left: 50px
+  .b-wrap
+    left: 0
+  .floor-wrap .f-title
+    font-size: 20px
+
+
+@media only screen and (max-width : 550px)
+  .header-wrap
+    .logo-wrap
+      width: 100%
+    .contact-wrap
+      width: 100%
+      text-align: center
+      margin-bottom: 25px

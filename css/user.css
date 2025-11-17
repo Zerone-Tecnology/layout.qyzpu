@@ -358,7 +358,7 @@
   transition: all 0.2s ease;
 }
 .program-head .btn-color-link:hover {
-  background-color: #1b5252;
+  background-color: rgb(27.25, 81.75, 81.75);
 }
 .program-head .img-wrap {
   text-align: center;
