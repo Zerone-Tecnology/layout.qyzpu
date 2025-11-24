@@ -150,6 +150,39 @@ a:hover {
 .header .search-wrap .searchContent.active {
   display: block;
 }
+.header .lang-wrap {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+.header .lang-wrap ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 5px;
+}
+.header .lang-wrap ul:hover li {
+  display: flex;
+}
+.header .lang-wrap ul li {
+  background-color: #287878;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 11px;
+  margin-right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  display: none;
+}
+.header .lang-wrap ul li a {
+  color: #fff;
+}
+.header .lang-wrap ul li.active {
+  display: flex;
+}
 .header .block {
   display: inline-block;
   vertical-align: middle;
